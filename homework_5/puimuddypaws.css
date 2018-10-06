@@ -2,7 +2,7 @@
 /* CSS Document */
 
 .container {
-	bvackground-color: #FAF1DC;
+	/* background-color: #FAF1DC; */
 	width: 100%;
 	margin-right: 0em;
 	margin-top: 2em;
@@ -13,9 +13,11 @@
 	padding-bottom: 0px;
 	font-family: 'Nunito', sans-serif;
 	margin-left: 0px;
-	background-color: #ACEEF3;
 }
 
+a {
+	text-decoration: none;
+}
 
 .mainctnt {
 	box-sizing: border-box;
@@ -30,9 +32,9 @@
 
 
 .menu {
-	height: 3em;
+	height: 55px;
 	background-color: #ACEEF3;
-	padding-left: 26px;	
+	padding-left: 26px;
 }
 
 .menulist {
@@ -48,7 +50,7 @@
 	margin-left: auto;
 	margin-top: 0.5em;
 	font-weight: normal;
-	color: #FFFFFF;
+	color:#17474B;
 	letter-spacing: 0.1em;
 	width: 15%;
 	padding-left:0.2em;
@@ -63,12 +65,15 @@
 
 .menulist #accountentry {
 	float:right;
+	width:auto;
+	margin-right:10px;
 }
 
 .menulist #accountentry:hover{
 	background-color: transparent;
-	cursor:pointer;
-	color:darkturquoise;
+	cursor: pointer;
+	color: darkturquoise;
+	float: right;
 }
 
 .menu .searchdropdown{
@@ -116,6 +121,8 @@
 	float: right;
 	text-decoration: underline;
 	padding-right: 40px;
+	padding-bottom:5px;
+	color:#7D8282;
 }
 
 
@@ -149,12 +156,11 @@
 }
 
 #shoppingcartbtn {
-	position:relative;
-	margin-left:87%;
+	position: relative;
+	margin-left: 88%;
 	z-index: 100;
 	background-color: transparent;
-	border:0em;
-
+	border: 0em;
 }
 
 
@@ -196,47 +202,103 @@
 }
 
 .columns.left-column {
-	background-color: aquamarine;
+	background-color: #FFFFFF;
 	width: 220px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding-left: 15px;
 	padding-top: 12px;
 }
 
+.columns.left-column div{
+	background-color: #F4F3F3;
+	margin:0;
+	padding:5px 0 5px 15px;
+	clear:both;
+}
+
+.columns.left-column ul {
+	list-style:none;
+	padding: 0 0 0 10px;
+}
+
+.columns.left-column ul li {
+	clear: both;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 0.8em;
+}
+
+.columns.left-column .arrowsmall {
+	float:right;
+	margin: 9px 10px 0px 5px;
+}
+
+.columns.left-column img {
+	float:left;
+	margin: 15px 5px 25px 5px;
+}
+
+.columns.left-column ul img {
+	float: left;
+	margin-right:9px;
+	margin-top:0px;
+		
+}
+
+.columns.left-column .styleandcolor {
+	width:27px;
+	height:27px;
+	float:left;
+	
+}
+
 .columns.right-column {
-	background-color: cornflowerblue;
 	width: 80%;
 	float: left;
-	display: inline-block;	
+	display: inline-block;
 }
 
 .toggle {
 	height: 50px;
 	margin-bottom: 15px;
 }
+
+
 .dctoggles{
-	float:left;
-	margin-right:1em;
-	margin-top:1em;
-	margin-left:2em;
-	margin-bottom:1em;
-	
+	float: left;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-left: 2em;
+	margin-bottom: 1em;
 }
 
-.dctoggles.span{
-	margin-left:1em;
+.dctoggles span{
+	margin-left:10px;
+	margin-top:0px;
+}
+
+.dctoggles img{
 }
 
 .columns.shoppingitems{
 	float: left;
-	width: 16em;
+	width: 15.1em;
 	margin-left:20px;
+	margin-bottom:40px;
+}
+.row .columns.shoppingitems h4 {
+	font-size: 25px;
+	text-align: left;
+}
+.row .columns.shoppingitems p {
+}
+.row .columns.shoppingitems span {
+	float: right;
 }
 
 .columns.shoppingitems img{
-	width:100%;
+	float:left;
 }
 
 /* ===Item Detail Page=== */
@@ -287,6 +349,7 @@
 	float:left;
 	margin-bottom: 0.5em;
 	font-size: 2em;
+	font-weight: 600;
 }
 
 .detailpage .blank {
@@ -315,10 +378,26 @@
 	margin:0;
 }
 
+.actionpanel .choice ul li{
+	list-style: none;
+	padding:0;
+	margin:5px 0 4px 0;
+	clear:both;
+}
+
+.styleandcolor {
+	width:27px;
+	height:27px;
+	background-color:#17A0AA;
+	float:left;
+	margin:0 5px 12px 0;
+}
+
 .detailpage .shoppingaction{
 	display: inline-block;
 	float: right;
 	position: relative;
+	margin:5em 0 0 0;
 }
 
 #addtocart {
