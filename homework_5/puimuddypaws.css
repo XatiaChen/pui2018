@@ -1,8 +1,4 @@
-@charset "UTF-8";
-/* CSS Document */
-
 .container {
-	/* background-color: #FAF1DC; */
 	width: 100%;
 	margin-right: 0em;
 	margin-top: 2em;
@@ -99,6 +95,7 @@ a {
 	background: rgba(255, 255, 255, 0.85);
 	border-radius: 0px 30px 30px 0px;
 }
+
 .menu #indexsearch {
 	float: left;
 	padding: 6px 100px 6px 6px;
@@ -150,8 +147,8 @@ a {
 
 .columns {
 	float: left;
-	margin: 0em;
-	padding: 0em;
+	margin: 0;
+	padding: 0;
 	display: inline-block;
 }
 
@@ -420,7 +417,6 @@ a {
 #buynow {
 	width: 12em;
 	height: 3em;
-	background: #FFDD67;
 	border: 1px solid #FFDD67;
 	box-sizing: border-box;
 	border-radius: 15px;
