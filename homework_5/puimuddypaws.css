@@ -295,10 +295,13 @@ a {
 }
 .row .columns.shoppingitems span {
 	float: right;
+	font-size: 20px;
+	font-weight: 900;
 }
 
 .columns.shoppingitems img{
 	float:left;
+	margin-bottom: 10px;
 }
 
 /* ===Item Detail Page=== */
