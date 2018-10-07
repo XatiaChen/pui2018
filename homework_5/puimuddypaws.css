@@ -3,16 +3,13 @@
 	margin-right: 0em;
 	margin-top: 2em;
 	border-bottom-width: 1em;
-	padding-left: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
 	font-family: 'Nunito', sans-serif;
 	margin-left: 0px;
 }
 
 a {
 	text-decoration: none;
+	text-align: center;
 }
 
 .mainctnt {
@@ -178,6 +175,7 @@ a {
 .catentry {
 	float: right;
 	margin-right: 30%;
+	text-align: center;
 }
 .entryintro {
 	text-align: center;
@@ -481,3 +479,31 @@ a {
 
 
 /* ===Contact Page=== */
+.container.contactus {
+	
+}
+
+.contactus .yellowbook {
+	padding:30px;
+	text-align: center;
+}
+
+.container.contactus .writeemail {
+	width:40%;
+	float:lseft;
+	display:inline-block;
+}
+.container.contactus .columns.writeemail {
+	width: 60%;
+}
+
+.container.contactus .faq {
+	float:left;
+	width: 40%;
+	margin-left:20px;
+	display:inline-block;
+}
+
+.columns.writeemail span{
+	padding-left:40%;
+}
