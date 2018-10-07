@@ -12,6 +12,7 @@
 a {
 	text-decoration: none;
 	text-align: center;
+	color:inherit;
 }
 
 .mainctnt {
@@ -278,11 +279,14 @@ a {
 	margin-bottom: 15px;
 }
 
+.toggle img {
+	margin-top:20px;
+}
+
 
 .dctoggles{
 	float: left;
 	margin-right: 1em;
-	margin-top: 1em;
 	margin-left: 2em;
 	margin-bottom: 1em;
 }
@@ -292,8 +296,6 @@ a {
 	margin-top:0px;
 }
 
-.dctoggles img{
-}
 
 .columns.shoppingitems{
 	float: left;
@@ -579,3 +581,100 @@ a {
 	
 }
 
+
+
+/* ===Login page=== */
+
+.container.log-in {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	
+	height:700px;
+		
+}
+
+.container.log-in .log-in-entry {
+	background-image: url(img/loginbg.png);
+    width: 80%;
+    height: 80%;
+    margin:20px auto 20px auto;
+    padding: 60px;
+}
+
+
+
+.container.log-in-entry .login-info {
+	background-color: #ACEEF3;
+	margin: auto;
+	height: 400px;
+	padding:100px 100px 50px 100px;
+}
+
+.container.log-in-entry .login-info .signin {
+	float:left;
+	width:30%;
+	margin:auto;
+}
+
+.log-in-entry form {
+	margin-top:30px;
+}
+
+.log-in-entry .signin input {
+	width:200px;
+	height:25px;
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+
+.container.log-in-entry .login-info .signup {
+	float:right;
+	width:30%;
+	margin:auto;
+}
+
+
+.log-in-entry .signup input {
+	width:200px;
+	height:25px;
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+
+
+.log-in-entry #signinbtnt{
+	margin:auto;
+	width: 108px;
+	height: 38px;
+	left: 765px;
+	top: 947px;
+	background: #FFDD67;
+	border: 1px solid #FFDD67;
+	box-sizing: border-box;
+	border-radius: 15px;
+	font-size: 15px;
+	display: inline-block;
+	clear: both;
+	background-color: #FFDD67;
+	margin-right: 19%;
+}
+
+.log-in-entry #nextbtnt{
+
+	width: 108px;
+	height: 38px;
+	left: 765px;
+	top: 947px;
+	background: #FFDD67;
+	border: 1px solid #FFDD67;
+	box-sizing: border-box;
+	border-radius: 15px;
+	font-size: 15px;
+	display: inline-block;
+	clear: both;
+	background-color: #FFDD67;
+	margin-right: 19%;
+	margin:auto;
+}
