@@ -1,3 +1,5 @@
+/* Overarching Styles*/
+
 .container {
 	width: 100%;
 	margin-right: 0em;
@@ -15,6 +17,16 @@ a {
 .mainctnt {
 	box-sizing: border-box;
 }
+
+
+#shoppingcartbtn {
+	position: relative;
+	margin-left: 88%;
+	z-index: 100;
+	background-color: transparent;
+	border: 0em;
+}
+
 
 /*header*/
 .secondary_header{
@@ -158,15 +170,6 @@ a {
 	display: inline-block;
 }
 
-#shoppingcartbtn {
-	position: relative;
-	margin-left: 88%;
-	z-index: 100;
-	background-color: transparent;
-	border: 0em;
-}
-
-
 .dogentry {
 	float: left;
 	clear: right;
@@ -193,6 +196,9 @@ a {
 }
 
 
+
+
+
 /* ===Browsing Page=== */
 
 .browsing {
@@ -204,6 +210,8 @@ a {
 	height:2em;
 	background-color:white;
 }
+
+/*Category on the left*/
 
 .columns.left-column {
 	background-color: #FFFFFF;
@@ -257,6 +265,8 @@ a {
 	
 }
 
+/*Item browsing section on the right*/
+
 .columns.right-column {
 	width: 80%;
 	float: left;
@@ -308,11 +318,18 @@ a {
 	margin-bottom: 10px;
 }
 
+
+
+
+
+
 /* ===Item Detail Page=== */
 .detailpage {
 	padding: 0em 5em 0em 5em;
 	box-sizing: border-box;
 }
+
+/*Image display on the left*/
 .detailpage .displaybig {
 	float: left;
 	margin-right: 70px;
@@ -330,6 +347,7 @@ a {
 	height: 40px;
 }
 
+/*Information on the right*/
 .detailpage .actionpanel {
 	width: 60%;
 	float: left;
@@ -342,13 +360,10 @@ a {
 .detailpage .featured-description {
 	display:block;
 	margin-bottom:2em;
-	
 }
 
 .detailpage .featured-description p{
 	width:85%;
-
-
 }
 
 .detailpage .featured-description img {
@@ -361,14 +376,6 @@ a {
 	margin-bottom: 0.5em;
 	font-size: 2em;
 	font-weight: 600;
-}
-
-.detailpage .blank {
-	display:inline-block;
-	width:15em;
-	height:2em;
-	background-color: brown;
-	clear:both;
 }
 
 .detailpage .secondary-actionpanel {
@@ -399,23 +406,10 @@ a {
 .styleandcolor {
 	width: 27px;
 	height: 27px;
-	/* [disabled]background-color:#17A0AA; */
 	float: left;
 	margin: 0 5px 12px 0;
 }
 
-.detailpage .shoppingaction{
-	display: inline-block;
-	float: right;
-	position: relative;
-	margin:5em 0 0 0;
-}
-
-.container.contactus .yellowbook {
-	width: 100%;
-	height: 400px;
-	background-color: #ACEEF3;
-}
 .detailcolorone {
 	background-color: #CE282C;
 }
@@ -424,6 +418,13 @@ a {
 }
 .detailcolorthree {
 	background-color: #17A0AA;
+}
+
+.detailpage .shoppingaction{
+	display: inline-block;
+	float: right;
+	position: relative;
+	margin:5em 0 0 0;
 }
 
 
@@ -479,31 +480,102 @@ a {
 
 
 /* ===Contact Page=== */
-.container.contactus {
+
+/* Yellowbook of all branch stores*/
+.container.contactus .yellowbook {
+	width: 100%;
+	height: 400px;
+	background-color: #ACEEF3;
+	padding:30px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* Write us an email*/
+.container.contactus .writeemail {
+	width:60%;
+	float:left;
+	display:inline-block;
+	padding: 0px 10px 10px 10px;
+	clear:both;
+}
+
+.container.contactus input {
+	width:80%;
+	margin-bottom:20px;
 	
 }
 
-.contactus .yellowbook {
-	padding:30px;
-	text-align: center;
+.container.contactus .nameentry {
+	height:25px;
+	
 }
 
-.container.contactus .writeemail {
-	width:40%;
-	float:lseft;
-	display:inline-block;
-}
-.container.contactus .columns.writeemail {
-	width: 60%;
+.container.contactus .descriptionentry {
+	height:200px;
+	
 }
 
-.container.contactus .faq {
-	float:left;
-	width: 40%;
-	margin-left:20px;
-	display:inline-block;
+.columns.writeemail .descriptionentry input {
+	width: 74px;
+	height: 56px;
+}
+
+.writeemail #sendemail{
+	float: right;
+	width: 108px;
+	height: 38px;
+	left: 765px;
+	top: 947px;
+	background: #FFDD67;
+	border: 1px solid #FFDD67;
+	box-sizing: border-box;
+	border-radius: 15px;
+	font-size: 15px;
+	display: inline-block;
+	clear: both;
+	background-color: #FFDD67;
+	margin-right: 19%;
 }
 
 .columns.writeemail span{
 	padding-left:40%;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 20px;
+	margin-bottom:20px;
 }
+
+/* FAQs*/
+.container.contactus .faq {
+	float:left;
+	width: 20%;
+	margin-left:20px;
+	display:inline-block;
+}
+
+.columns.faq span{
+	padding-left:40%;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 20px;
+	margin-bottom:20px;
+}
+
+.container.contactus .faq ul {
+	list-style: none;
+    margin: 30px 0 10px 0;
+    padding: 0;
+	
+}
+
+.container.contactus .faq ul li{    
+	margin: 10px 0 10px 0;
+    padding: 0;
+	
+}
+
