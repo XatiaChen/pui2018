@@ -31,6 +31,7 @@ a {
 	height: 55px;
 	background-color: #ACEEF3;
 	padding-left: 26px;
+	clear: both;
 }
 
 .menulist {
@@ -110,16 +111,23 @@ a {
 
 
 #logomain {
+	position: relative;
 	float: left;
-	padding-left: 40px;
+	margin-left: 42%;
+}
+
+#logoleft {
+	position: relative;
+	float: left;
+	margin-left: 40px;
 }
 
 .loginentry{
 	float: right;
 	text-decoration: underline;
 	padding-right: 40px;
-	padding-bottom:5px;
-	color:#7D8282;
+	padding-bottom: 5px;
+	color: #7D8282;
 }
 
 
@@ -144,6 +152,7 @@ a {
 	display: inline-block;
 	float:left;
 }
+
 
 .columns {
 	float: left;
@@ -303,7 +312,7 @@ a {
 
 /* ===Item Detail Page=== */
 .detailpage {
-	padding: 0em 5em 5em 5em;
+	padding: 0em 5em 0em 5em;
 	box-sizing: border-box;
 }
 .detailpage .displaybig {
@@ -317,6 +326,10 @@ a {
 .detailpage .displaybig img{
 	width:100%;
 	height:100%;
+}
+.container.detailpage .displaybig .detailslides {
+	width: 100%;
+	height: 40px;
 }
 
 .detailpage .actionpanel {
@@ -342,7 +355,7 @@ a {
 
 .detailpage .featured-description img {
 	float: left;
-	margin-right: 9em;
+	margin-right: 18em;
 }
 
 .detailpage .price{
@@ -362,8 +375,8 @@ a {
 
 .detailpage .secondary-actionpanel {
 	display: inline-block;
-	float:left;
-	
+	float: left;
+	width: 90%;	
 }
 
 .actionpanel .choice {
@@ -386,11 +399,11 @@ a {
 }
 
 .styleandcolor {
-	width:27px;
-	height:27px;
-	background-color:#17A0AA;
-	float:left;
-	margin:0 5px 12px 0;
+	width: 27px;
+	height: 27px;
+	/* [disabled]background-color:#17A0AA; */
+	float: left;
+	margin: 0 5px 12px 0;
 }
 
 .detailpage .shoppingaction{
@@ -398,6 +411,44 @@ a {
 	float: right;
 	position: relative;
 	margin:5em 0 0 0;
+}
+
+.container.contactus .yellowbook {
+	width: 100%;
+	height: 400px;
+	background-color: #ACEEF3;
+}
+.detailcolorone {
+	background-color: #CE282C;
+}
+.detailcolortwo {
+	background-color: #61105E;
+}
+.detailcolorthree {
+	background-color: #17A0AA;
+}
+
+
+.container .row.detaildescription {
+	padding: 0em 5em 5em 5em;
+	box-sizing:border-box;
+}
+
+.container .row.detaildescription p {
+	width: 45%;
+	margin: 10px;
+	float: left;
+}
+
+.container .detailtag {
+	border-radius: 14px;
+	border: solid #ACEEF3;
+	padding-top: 11px;
+	padding-right: 24px;
+	padding-bottom: 11px;
+	padding-left: 24px;
+	clear: both;
+	width: 50px;
 }
 
 #addtocart {
@@ -420,10 +471,11 @@ a {
 	border: 1px solid #FFDD67;
 	box-sizing: border-box;
 	border-radius: 15px;
-	font-size:1em;
-	float:right;
-	display:inline-block;
-	clear:both;
+	font-size: 1em;
+	float: right;
+	display: inline-block;
+	clear: both;
+	background-color: #FFDD67;
 }
 
 
