@@ -1,5 +1,5 @@
-/* Overarching Styles*/
-
+/* ===Overarching Styles===*/
+/*body*/
 .container {
 	width: 100%;
 	margin-right: 0em;
@@ -13,10 +13,6 @@ a {
 	text-decoration: none;
 	text-align: center;
 	color:inherit;
-}
-
-.mainctnt {
-	box-sizing: border-box;
 }
 
 
@@ -153,7 +149,13 @@ a {
 	width:100%;
 	height:100%;
 }
+
+
 /*main content*/
+
+.mainctnt {
+	box-sizing: border-box;
+}
 
 .row {
 	width: 100%;
@@ -187,9 +189,17 @@ a {
 	font-size: 1.5em;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: #ACEEF3;
+	color: #289098;
+	background-color: rgba(172,238,243,0.5);
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	width: 300px;
+	border-radius: 22px;
 }
 
+/*footer*/
 .footer {
 	alignment-baseline: center;
 	vertical-align: baseline;
@@ -217,8 +227,6 @@ a {
 .columns.left-column {
 	background-color: #FFFFFF;
 	width: 220px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-top: 12px;
 }
@@ -326,6 +334,7 @@ a {
 
 
 /* ===Item Detail Page=== */
+
 .detailpage {
 	padding: 0em 5em 0em 5em;
 	box-sizing: border-box;
@@ -353,8 +362,6 @@ a {
 .detailpage .actionpanel {
 	width: 60%;
 	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -455,7 +462,7 @@ a {
 #addtocart {
 	width: 12em;
 	height: 3em;
-	background: #FFFAE7;
+	background-color: #FFFAE7;
 	border: 1px solid #FFDD67;
 	box-sizing: border-box;
 	border-radius: 15px;
@@ -529,7 +536,6 @@ a {
 	height: 38px;
 	left: 765px;
 	top: 947px;
-	background: #FFDD67;
 	border: 1px solid #FFDD67;
 	box-sizing: border-box;
 	border-radius: 15px;
@@ -590,7 +596,6 @@ a {
 	padding-right: 20px;
 	padding-bottom: 20px;
 	padding-left: 20px;
-	
 	height:700px;
 		
 }
@@ -612,14 +617,16 @@ a {
 	padding:100px 100px 50px 100px;
 }
 
+.log-in-entry form {
+	margin-top:30px;
+}
+
+
+/*sign in section */
 .container.log-in-entry .login-info .signin {
 	float:left;
 	width:30%;
 	margin:auto;
-}
-
-.log-in-entry form {
-	margin-top:30px;
 }
 
 .log-in-entry .signin input {
@@ -628,6 +635,25 @@ a {
 	margin-top:10px;
 	margin-bottom: 20px;
 }
+
+.log-in-entry #signinbtnt{
+	margin:auto;
+	width: 108px;
+	height: 38px;
+	left: 765px;
+	top: 947px;
+	border: 1px solid #FFDD67;
+	box-sizing: border-box;
+	border-radius: 15px;
+	font-size: 15px;
+	display: inline-block;
+	clear: both;
+	background-color: #FFDD67;
+	margin-right: 19%;
+}
+
+
+/*sign up section */
 
 .container.log-in-entry .login-info .signup {
 	float:right;
@@ -644,30 +670,12 @@ a {
 }
 
 
-.log-in-entry #signinbtnt{
-	margin:auto;
-	width: 108px;
-	height: 38px;
-	left: 765px;
-	top: 947px;
-	background: #FFDD67;
-	border: 1px solid #FFDD67;
-	box-sizing: border-box;
-	border-radius: 15px;
-	font-size: 15px;
-	display: inline-block;
-	clear: both;
-	background-color: #FFDD67;
-	margin-right: 19%;
-}
-
 .log-in-entry #nextbtnt{
 
 	width: 108px;
 	height: 38px;
 	left: 765px;
 	top: 947px;
-	background: #FFDD67;
 	border: 1px solid #FFDD67;
 	box-sizing: border-box;
 	border-radius: 15px;
