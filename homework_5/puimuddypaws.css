@@ -62,7 +62,7 @@ a {
 }
 
 .menulist li:hover {
-	background-color: #7AA4AE;
+	background: #7AA4AE;
 	cursor:pointer;
 }
 
@@ -114,6 +114,11 @@ a {
 	background: rgba(255, 255, 255, 0.85);
 	border-radius: 30px;
 }
+
+#searchbox:hover {
+	background-color: rgba(255, 255, 255, 0);
+}
+
 
 
 #logomain {
