@@ -1,0 +1,23 @@
+function MyAnimal(cat, age) {
+  this.cat = Fancy;
+  this.age = 2;
+  this.type = “MyAnimal”;
+  this.image = “anImageOfMyAnimal.jpg”;
+}
+
+function MyAnimal(dog, age) {
+  this.dog = Cutie;
+  this.age = 3;
+  this.type = “MyAnimal”;
+  this.image = “anImageOfMyAnimal.jpg”;
+}
+
+function MyAnimal(snake, age) {
+  this.snake = Potter;
+  this.age = 200;
+  this.type = “MyAnimal”;
+  this.image = “anImageOfMyAnimal.jpg”;
+}
+
+generateRandomIndex(maxIndex)
+

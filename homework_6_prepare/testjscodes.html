@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>shopping cart experiment</title>
+</head>
+
+<body>
+<div class="container shoppingcart-page">
+	<heading>
+		logo here
+	</heading>
+	<div>
+		<h1>Shopping Cart</h1>
+		
+		<script>
+			//build a shopping list
+			var shoppingCart = []
+			
+			function Item(name, size, color, price, quantity) {
+				this.name = name;
+				this.color = color;
+				this.size = size;
+				this.price= price;
+				this.quantity = quantity;
+			};
+			
+			
+			function addItemToCart(name, size, color, price, quantity) {
+				for (var i in shoppingCart) {
+					if (shoppingCart[i].name === name && shoppingCart[i].size === size && shoppingCart[i].color === color) {
+						shoppingCart[i].quantity += quantity;
+						return;
+					}
+				}
+				var item = new Item(name, size, color, price, quantity);
+				shoppingCart.push(item); //add to local storage of detail page
+			}
+			
+			function removeItemFromCart(name, size, color, price, quantity) {
+				for (var i in shoppingCart) {
+					if (shoppingCart[i].name === name && shoppingCart[i].size === size && shoppingCart[i].color === color) {
+						shoppingCart[i].quantity --;
+						if (shoppingCart[i].quantity === 0) {
+							shoppingCart.splice(i, 1)
+						}
+						break;
+					}
+				}
+			}
+			
+			
+			function removeItemFromCartAll(name, size, color, price, quantity) {
+				for (var i in shoppingCart) {
+					if (shoppingCart[i].name === name && shoppingCart[i].size === size && shoppingCart[i].color === color) {
+					shoppingCart.splice(i, 1);
+					break;
+					}
+				}
+			}
+				
+		
+//			function clearCart() { //remove all the items from the cart
+//				shoppingCart = [];
+//			}
+			
+			function countCart() { //count the number of items
+				var totalCount = 0;
+				for (var i in shoppingCart) {
+					totalCount += shoppingCart[i].quantity;
+				}
+				
+				return totalCount;
+			}
+				
+			
+			function subtotalCart() {//return overall total cost
+				var subtotalCost = 0;
+				for (var i in shoppingCart) {
+					subtotalCost += shoppingCart[i].price * shoppingCart[i].quantity;
+				}
+				return subtotalCost;
+			}
+			
+			function saveCartLocal() {
+				localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+			
+			}
+			// loadCart() // so that customers can see on the screen
+			function loadCart (){
+				var shoppingcart = JSON.parse(localStorage.getItem("savedAnimal"));
+				for (var item in shoppingcart) {
+					addListToShoppingCart(item);					
+				}
+			}
+			
+			function addListToShoppingCart(item) {
+				console.log('hello world');
+				var list = document.getElementById("grocery-list");
+				var itemInput = document.getElementById("new-list-item");
+				var newItem = document.createElement("li");
+				newItem.appendChild(document.createTextNode(itemInput.value));
+				list.appendChild(newItem);
+			}
+
+			function deleteListItem(item) {
+					// remove li element (item) from ol element (item.parentNode)
+					item.remove();
+			}
+			
+			
+			
+			
+			addItemToCart("example1", "M", "blue", 5.10, 1);
+			addItemToCart("example1", "M", "blue", 5.10, 3);
+			addItemToCart("example2", "S", "green", 12.77, 1);
+			//addItemToCart("example1", "L", "blue", 5.10, 2);
+			
+			removeItemFromCart("example1", "M", "blue", 5.10, 1)
+			//removeItemFromCartAll("example2", "S", "green", 12.77, 1)
+			console.log(shoppingCart);
+			//console.log(shoppingCart[0]);
+			//console.log(shoppingCart.length);
+			console.log( countCart() );
+			console.log(subtotalCart());
+			localStorage.setItem("test", 1)
+			
+			
+			
+			
+			
+		
+			var shoppingCartItems = JSON.parse(localStorage.getItem(xxx));
+			var list = doc.getItem('ul');
+			for (var item in shoppingCartItems) {
+				var newItem = doc.create('li');
+				newItem.appendChild(doc.creatImg(item.imageUrl));
+				newItem.appendChild(doc.creatText(item.name));
+				newItem.appendChild(doc.creatImg(item.imageUrl));
+				list.appendChild(item);
+			}
+
+		
+		</script>
+		
+	</div>
+	
+	
+</div>
+
+</body>
+</html>
