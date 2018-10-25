@@ -9,6 +9,7 @@
 	margin-left: 0px;
 }
 
+
 a {
 	text-decoration: none;
 	text-align: center;
@@ -745,11 +746,10 @@ a {
 	text-align: center;
 }
 
-.cart-list-parent {
+.container .car-list-parent {
+	margin: auto;
 	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	background-color:antiquewhite;
+	background-color: aquamarine;
 }
 
 .cart-list {
@@ -780,4 +780,19 @@ a {
 	border-bottom: none;
 }
 
+.container .price-section p {
+	float:right;
+	clear:both;
+}
+
+.container .price-section img {
+	float:right;
+	clear:both;
+}
+
+.container .wishlist-items {
+	background-color: cadetblue;
+	height:100px;
+	margin-top:200px;
+}
 
