@@ -414,8 +414,9 @@ a {
 }
 
 #related-items-title {
-	margin-left:60px;
+	margin-left: 60px;
 	font-family: 'Nunito', sans-serif;
+	clear: both;
 }
 
 .detailpage .shoppingaction {
