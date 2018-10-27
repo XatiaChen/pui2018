@@ -833,11 +833,10 @@ a {
     clear: both;
 }
 
-#update_cart {
+#goto_wishlilst {
     padding: 10px 16px;
     border-radius: 10px;
     float: right;
-    background-color: aqua;
     cursor: pointer;
 }
 
@@ -845,7 +844,7 @@ a {
     padding: 10px 16px;
     border-radius: 10px;
     float: right;
-    background-color: yellowgreen;
+    background-color: #FFDD67;
     cursor: pointer;
 }
 
@@ -885,7 +884,8 @@ a {
     width: 100px;
     cursor: pointer;
     margin: auto;
-    background-color: yellowgreen;
+    background-color: #FFFAE7;
+	border: 1px solid #FFDD67;
 }
 
 .sizeItem {

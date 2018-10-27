@@ -152,7 +152,7 @@ function renderList(collection) {
 				<div class="cart-list-item-info">
 					<div><span class="item-price"></span></div>
 					<div><a href="detail.html?prodctId=${element.id}">${element.name}</a></div>
-					<div><b>${element.size},${element.color}</b></div>
+					<div><b>${element.size},</b><b> ${element.color}</b></div>
 					<img src="img/reviewstars.png" alt="Harness" />
 				</div>
 

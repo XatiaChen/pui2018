@@ -3,7 +3,7 @@
 productList = [
     {
         id: "dog-01",
-        name: "igh-end Dog GPS",
+        name: "High-end Dog GPS",
         type: 'dog',
         size: [{ title: "S", value: "small" }, { title: "M", value: "medium" }, { title: "L", value: "large" }],
         img: "img/item1.png",
@@ -37,7 +37,7 @@ productList = [
         id: "dog-03",
         name: "Dog Food Storage",
         type: 'dog',
-        size: { "S": "small", "M": "medium", "L": "large" },
+        size: [{ title: "S", value: "small" }, { title: "M", value: "medium" }, { title: "L", value: "large" }],
         img: "img/item3.png",
         color: [
             { color: "Red", imgurl: "img/dogfoodstoragedisplayred.png" },
