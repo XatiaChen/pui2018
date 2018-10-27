@@ -16,16 +16,16 @@ $(document).ready(function () {
 
 
 
-  //商品数量加减按钮
+  //quantity plus and minus
   $('.quantity-action').on('click', function () {
     var action = $(this).attr('data-action');
     var currentValue = +$('#quantity').val();
-    if (action == "reduce") {
+    if (action === "reduce") {
       if (currentValue > 1) {
         currentValue--;
       }
     }
-    if (action == "add") {
+    if (action === "add") {
       currentValue++;
     }
 
@@ -243,7 +243,7 @@ function renderProduct(product) {
 
 }
 
-
+//grab size value
 function renderSize(sizeList) {
   var contaner = $('#all_sizes');
   contaner.empty();
@@ -261,7 +261,7 @@ function renderSize(sizeList) {
 }
 
 
-
+//grab color value
 function renderColor(ColorList) {
   var contaner = $('#all_colors');
   contaner.empty();
@@ -271,6 +271,7 @@ function renderColor(ColorList) {
     item.on('click', function () {
       currentCart["color"] = $(this).attr('data-value');
       $('#displayimg').attr("src", $(this).attr('data-img'));
+	  $(this).attr('class', "styleandcolor color-active");
     })
     contaner.append(item);
   });
