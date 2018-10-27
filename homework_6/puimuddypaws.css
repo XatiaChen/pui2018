@@ -856,6 +856,9 @@ a {
     overflow: hidden;
     float: left;
 }
+#wish_product p {
+	margin-bottom: 20px;
+}
 
 .wishlist-items ul {
     position: absolute;
