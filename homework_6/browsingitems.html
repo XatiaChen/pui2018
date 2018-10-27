@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Muddy Paws Adventure Gear</title>
+	<!-- CSS -->
+	<link href="puimuddypaws.css" rel="stylesheet" type="text/css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="lib/jquery.min.js"></script> -->
+
+	<!-- javascript -->
+	<script src="./productDB.js"></script>
+	<script src="shopingCarService.js"></script>
+	<script src="browsingitems.js"></script>
+
+</head>
+
+<body>
+	<!-- All containt -->
+	<div class="container">
+		<!-- Header -->
+		<header>
+			<div class="nonmain_header">
+				<div id="logoleft">
+					<a href="index.html"><img src="img/mplogoleft.png" width="300" alt="" /></a>
+				</div>
+				<div class="loginentry">
+					<span><a href="login.html">LOG IN</a></span>
+				</div>
+			</div>
+			<br>
+			<nav class="menu">
+				<div class="menulist">
+					<div class="searchdropdown">
+						<span>All</span>
+						<img src="img/dropdownarrow.png" width="18" height="10" alt="" /> </div>
+					<input type="text" placeholder="Search..">
+				</div>
+				<ul class="menulist">
+					<li id="accountentry">ACCOUNT</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- main content -->
+		<div class="mainctnt browsing">
+			<div class="columns left-column">
+				<div>
+					<span>Categories</span>
+					<img src="img/dropdownarrowsmall.png" width="12" height="7" alt="arrow" class="arrowsmall" />
+				</div>
+				<ul>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" /><span>Harness</span></li>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" />Food Storage</li>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" />Water Storage</li>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" />GPS</li>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" />Backpack (cats only)</li>
+				</ul>
+
+				<div>
+					<span>Sizes</span>
+					<img src="img/dropdownarrowsmall.png" width="12" height="7" alt="arrow" class="arrowsmall" />
+				</div>
+				<img src="img/smallgray.png" width="27" height="27" alt="size" />
+				<img src="img/mediumgray.png" width="27" height="27" alt="size" />
+				<img src="img/largegray.png" width="27" height="27" alt="size" />
+
+				<div>
+					<span>Colors</span>
+					<img src="img/dropdownarrowsmall.png" width="12" height="7" alt="arrow" class="arrowsmall" />
+				</div>
+				<img src="img/patterns.png" width="129" height="18" alt="colors" />
+
+				<div>
+					<span>Brands</span>
+					<img src="img/dropdownarrowsmall.png" width="12" height="7" alt="arrow" class="arrowsmall" />
+				</div>
+				<ul>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" />Brand1</li>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" />Brand2<br></li>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" />Brand3<br></li>
+					<li><img src="img/selectbox.png" width="18" height="18" alt="selectbox" />Brand4</li>
+				</ul>
+			</div>
+
+			<div class="columns right-column">
+				<div class="row toggle">
+					<div class="dctoggles">
+						<img src="img/toggleon.png" width="22" height="22" alt="dot" /><span>Dogs</span>
+					</div>
+					<div class="dctoggles">
+						<img src="img/toggleoff.png" width="22" height="22" alt="dot" /><span>Cats</span>
+					</div>
+					<img src="img/sortbutton.png" width="117" height="24" alt="item" />
+				</div>
+
+				<div class="row" id="product_list">
+					<!-- <div class="columns shoppingitems">
+						<a href="detail2.html"><img src="img/item1.png" alt="item" /></a>
+						<a href="detail2.html">
+							<h4>High-end Dog GPS</h4>
+						</a>
+						<p>Pawtitas Reflective Padded Dog Harness, Teal, Beautiful and good</p>
+						<div><img src="img/colorsdetail.png" alt="item" /></div>
+						<span>$102.75</span>
+					</div>
+					<div class="columns shoppingitems">
+						<a href="detail3.html"><img src="img/item2.png" width="246" height="280" alt="item" /></a>
+						<a href="detail3.html">
+							<h4>Dog bottles combo</h4>
+						</a>
+						<p>Pawtitas Reflective Padded Dog Harness, Teal, Beautiful and good</p>
+						<div><img src="img/colorsdetail.png" alt="item" /></div>
+						<span>$22.75</span>
+					</div>
+					<div class="columns shoppingitems">
+						<a href="detail4.html"><img src="img/item3.png" width="246" height="280" alt="item" /></a>
+						<a href="detail4.html">
+							<h4>Dog Food Storage</h4>
+						</a>
+						<p>Pawtitas Reflective Padded Dog Harness, Teal, Beautiful and good</p>
+						<div><img src="img/colorsdetail.png" alt="item" /></div>
+						<span>$19.99</span>
+
+					</div>
+					<div class="columns shoppingitems">
+						<a href="detail1.html"><img src="img/item4.png" width="246" height="280" alt="item" /></a>
+						<a href="detail1.html">
+							<h4>A Fancy Dog Harness</h4>
+						</a>
+						<p>Pawtitas Reflective Padded Dog Harness, Teal, Beautiful and good</p>
+						<div><img src="img/colorsdetail.png" alt="item" /></div>
+						<span>$20.99</span>
+					</div> -->
+				</div>
+			</div>
+
+			<a href="shoppingcart.html" target="_blank">
+				<button id="shoppingcartbtn">
+					<img src="img/shoppingcarticon.png" width="116" height="116" alt="shoppingcartbutton" />
+					<div class="cart-tips-wrapper" id="cart-tips-wrapper"></div>
+				</button>
+				<div id="count-visualcue">
+					0
+				</div>
+			</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

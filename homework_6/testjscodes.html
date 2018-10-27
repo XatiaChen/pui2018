@@ -150,3 +150,176 @@
 
 </body>
 </html>
+
+
+
+<script>
+
+//setSize
+function setSize() {
+	
+}
+
+//get size value
+$(document).on("click","#size-small", function(){
+	var size = $(this).attr("sizeid")
+	console.log(size)
+})
+
+
+// grab data from the detail page
+function onCartBtnClick() {
+	var input = document.getElementsByClassName("quantity-input");
+	var inputValue = input.value;
+	var Item = {
+		quantity = inputValue;
+		color = "Red"
+	}
+	
+}
+
+//pass in to the object Item
+
+
+//save the object at locat storage
+
+
+//visual cue
+
+
+//click shopping cart button and go to shopping cart page
+
+
+//pull the array out and list them on the 
+
+
+
+
+
+
+
+
+
+//build a shopping list
+var shoppingCart = []
+
+function Item(name, size, color, price, quantity) {
+	this.name = name;
+	this.color = color;
+	this.size = size;
+	this.price= price;
+	this.quantity = quantity;
+};
+
+function addItemToCart(name, size, color, price, quantity) {
+	for (var i in shoppingCart) {
+		if (shoppingCart[i].name === name && shoppingCart[i].size === size && shoppingCart[i].color === color) {
+			shoppingCart[i].quantity += quantity;
+			return;
+		}
+	}
+	var item = new Item(name, size, color, price, quantity); //create a new item
+	shoppingCart.push(item); //add to local storage of detail page
+}
+
+function removeItemFromCart(name, size, color, price, quantity) {
+	for (var i in shoppingCart) {
+		if (shoppingCart[i].name === name && shoppingCart[i].size === size && shoppingCart[i].color === color) {
+			shoppingCart[i].quantity --;
+			if (shoppingCart[i].quantity === 0) {
+				shoppingCart.splice(i, 1)
+			}
+			break;
+		}
+	}
+}
+
+
+function removeItemFromCartAll(name, size, color, price, quantity) {
+	for (var i in shoppingCart) {
+		if (shoppingCart[i].name === name && shoppingCart[i].size === size && shoppingCart[i].color === color) {
+		shoppingCart.splice(i, 1);
+		break;
+		}
+	}
+}
+
+
+//			function clearCart() { //remove all the items from the cart
+//				shoppingCart = [];
+//			}
+
+function countCart() { //count the number of items
+	var totalCount = 0;
+	for (var i in shoppingCart) {
+		totalCount += shoppingCart[i].quantity;
+	}
+
+	return totalCount;
+}
+
+
+function subtotalCart() {//return overall total cost
+	var subtotalCost = 0;
+	for (var i in shoppingCart) {
+		subtotalCost += shoppingCart[i].price * shoppingCart[i].quantity;
+	}
+	return subtotalCost;
+}
+
+function saveCartLocal() {
+	localStorage.setItem("shoppingCartStorage", JSON.stringify(shoppingCart)); //save the whole array of shopping cart
+
+}
+// loadCart() // so that customers can see on the screen
+function loadCart (){
+	var shoppingcart = JSON.parse(localStorage.getItem("savedAnimal"));
+	for (var item in shoppingcart) {
+		addListToShoppingCart(item);					
+	}
+}
+
+//function addListToShoppingCart(item) {
+//	console.log('hello world');
+//	var list = document.getElementById("grocery-list");
+//	var itemInput = document.getElementById("new-list-item");
+//	var newItem = document.createElement("li");
+//	newItem.appendChild(document.createTextNode(itemInput.value));
+//	list.appendChild(newItem);
+//}
+
+function deleteListItem(item) {
+		// remove li element (item) from ol element (item.parentNode)
+		item.remove();
+}
+
+
+
+var shoppingCartItems = JSON.parse(localStorage.getItem(xxx));
+var itemlist = document.getElementsByClassName("cart-list");
+for (var item in shoppingCart) {
+	var displayItem = .create('li');
+	
+}
+
+
+//get shopping cart array from the local storage
+function GetFromStorage {
+	var storage = localstorage.getItem("shoppingCartStorage");
+	console.log(storage);
+	if (storage){
+		return JSON.parse(storage);
+	}
+}
+
+
+//display shopping cart
+
+
+var currentItemDetails = {
+	size: null; 
+	color: null;
+	quantity: null;
+};
+</script>
+

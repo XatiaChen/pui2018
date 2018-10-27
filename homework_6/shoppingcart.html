@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Muddy Paws Adventure Gear</title>
+	<!-- CSS -->
+	<link href="puimuddypaws.css" rel="stylesheet" type="text/css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="lib/jquery.min.js"></script> -->
+
+	<!-- javascript -->
+	<script src="shopingCarService.js"></script>
+	<script src="shoppingcart.js"></script>
+
+</head>
+
+<body>
+
+	<!-- All containt -->
+	<div class="container">
+		<!-- Header -->
+		<header>
+			<div class="nonmain_header">
+				<div id="logoleft">
+					<a href="index.html"><img src="img/mplogoleft.png" width="300" alt="" /></a>
+				</div>
+				<div class="loginentry">
+					<span><a href="login.html">LOG IN</a></span>
+				</div>
+			</div>
+			<br>
+			<nav>
+				<a href="browsingitems.html"><img src="img/backbutton.png" width="28" height="24" style="margin-left:40px" alt="" />
+				</a>
+			</nav>
+		</header>
+
+		<!--shopping cart list-->
+		<div class="car-list-parent">
+			<div style="width:100% ;display: flow-root;">
+				<a href="wishList.html">
+					<p id="update_cart">add from wish list</p>
+				</a>
+			</div>
+			<ul class="cart-list" id="cart-list-container">
+
+			</ul>
+
+			<!-- table version list
+			<table class="list-table">
+				<tr>
+					<th>Picture</th>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Size</th>
+					<th>Color</th>
+					<th>Price</th>
+				</tr>
+
+			</table> -->
+
+			<div class="price-section">
+				<img src="img/Line.png" width="541" height="3" alt="" /> <br>
+				<p>Subtotal: $<span class="subtotal-price" id='totalpay'></span></p>
+				<p>Shipping: Free</p>
+				<p>Total: $<span class="subtotal-price" id="must_pay"></span></p>
+				<img src="img/Line.png" width="541" height="3" alt="" /> <br>
+			</div>
+
+
+			<div style="width:100% ;display: flow-root;">
+				<p id="check_out">Check out ></p>
+			</div>
+		</div>
+
+
+
+		<!-- wish list recommendations -->
+		<div style="background-color:linen;">
+
+			<div style="width:1200px;margin:auto">
+				<div class="wishAction" data-action="left">
+					<span>&lt;</span> </div>
+				<div class="wishlist-items" id="wish_product">
+					<ul id='marqueeList'>
+						<li><img src="img/dogharnessdetail1.png">
+							<p>add to cart</p>
+						</li>
+						<li><img src="img/dogharnessdetail2.png">
+							<p>add to cart</p>
+						</li>
+						<li><img src="img/dogharnessdetail3.png">
+							<p>add to cart</p>
+						</li>
+						<li><img src="img/dogharnessdetail4.png">
+							<p>add to cart</p>
+						</li>
+						<li><img src="img/dogharnessdetail5.png">
+							<p>add to cart</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="wishAction" data-action="right">
+					<span>&gt;</span> </div>
+			</div>
+
+		</div>
+	</div>
+	<!--container-->
+
+	<!-- <li class="cart-list-item">
+		<div>
+			<img src="${thumbnail}" alt="" width="77">
+		</div>
+		<div class="cart-list-item-info">
+			<div><span class="item-price"></span></div>
+			<div>a Fancy Dog Harness</div>
+			<div><b>${size},${color}</b></div>
+			<img src="img/reviewstars.png" alt="Harness" />
+		</div>
+		<div>
+			<div class="quantity-wrapper">
+				<div class="quantity-action" data-action="reduce" data-value="{{= $index}}">-</div>
+				<input type="text" class="quantity-input" id="quantity"  value="${quantity}" />
+				<div class="quantity-action" data-action="add" data-value="{{= $index}}">+</div>
+			</div>
+			<div>
+				total : <span>$${price * quantity}</span>
+			</div>
+		</div>
+		<div class="cart-list-item-close-wrapper">
+			<img onclick="remove({{= $index}})" style="cursor:pointer" src="img/deletebutton.png" alt="deletebutton" data-action="delete" data-value="${index}" />
+		</div>
+	</li> -->
+
+</body>
+
+</html>
