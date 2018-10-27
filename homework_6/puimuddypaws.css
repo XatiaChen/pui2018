@@ -409,17 +409,14 @@ a {
     margin: 0 5px 12px 0;
 }
 
-/*.detailcolorone {
-    background-color: #CE282C;
+.related-items {
+	background-color:#DDF5F7;
 }
 
-.detailcolortwo {
-    background-color: #61105E;
+#related-items-title {
+	margin-left:60px;
+	font-family: 'Nunito', sans-serif;
 }
-
-.detailcolorthree {
-    background-color: #17A0AA;
-}*/
 
 .detailpage .shoppingaction {
     display: inline-block;
