@@ -410,12 +410,13 @@ a {
 }
 
 .related-items {
-	background-color:#DDF5F7;
+    background-color: #DDF5F7;
 }
 
 #related-items-title {
-	margin-left:60px;
-	font-family: 'Nunito', sans-serif;
+    margin-left: 60px;
+    font-family: 'Nunito', sans-serif;
+    clear: both;
 }
 
 .detailpage .shoppingaction {
@@ -498,6 +499,9 @@ a {
     height: 30px;
     color: white;
     float: right;
+    position: relative;
+    right: -85px;
+    top: 29px;
 }
 
 #count-visualcue p {
@@ -527,6 +531,8 @@ a {
     width: 22px;
     height: 22px;
     color: white;
+    position: relative;
+    top: 24px;
 }
 
 /* ===Contact Page=== */
@@ -735,11 +741,11 @@ a {
     cursor: pointer;
 }
 
-
 .quantity-wrapper {
     display: flex;
     width: 118px;
     border: 1px solid #dddddd;
+	margin-bottom: 20px;
 }
 
 .quantity-action {
@@ -841,14 +847,16 @@ a {
 
 .wishlist-items {
     /* background-color: lightgray; */
-    width: 1000px;
+    width: 92%;
     height: 240px;
     position: relative;
     overflow: hidden;
+    margin: auto;
     float: left;
 }
+
 #wish_product p {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .wishlist-items ul {
@@ -857,6 +865,7 @@ a {
     top: 0;
     overflow: hidden;
     float: left;
+    background-color: #DDF5F7
 }
 
 .wishlist-items ul li {
@@ -879,29 +888,29 @@ a {
     cursor: pointer;
     margin: auto;
     background-color: #FFFAE7;
-	border: 1px solid #FFDD67;
+    border: 1px solid #FFDD67;
 }
 
 .sizeItem {
     float: left;
-    border: 1px rgba(198,193,193,1.00) inset;
+    border: 1px rgba(198, 193, 193, 1.00) inset;
     padding: 2px 6px;
     margin-right: 5px;
     cursor: pointer;
-	width:13px;
-	height:20px;
-	text-align: center;
+    width: 13px;
+    height: 20px;
+    text-align: center;
 }
 
 .size_active {
     background-color: white;
-	border:1px solid rgba(43,197,221,1.00);
-	color:rgba(43,197,221,1.00);
+    border: 1px solid rgba(43, 197, 221, 1.00);
+    color: rgba(43, 197, 221, 1.00);
 }
 
-
-.color-active,{
-	border:1px solid rgba(43,197,221,1.00);
+.color-active,
+    {
+    border: 1px solid rgba(43, 197, 221, 1.00);
 }
 
 .wishList-table {
@@ -922,7 +931,7 @@ a {
     width: 100px;
     cursor: pointer;
     margin: auto;
-    background-color: yellowgreen;
+    background-color:gold;
 }
 
 .wishAction {
@@ -938,4 +947,41 @@ a {
     background-color: rgb(212, 212, 212);
     margin: 0px 3px;
     cursor: pointer;
+}
+
+.color_active {
+    border: 2px blue inset;
+}
+
+.maruqee {
+    width: 100%;
+    margin: auto
+}
+
+.marquee_parent {
+    background-color: linen
+}
+
+.check_out {
+    width: 100%;
+    display: flow-root;
+}
+
+.wish {
+    float: left;
+    margin-left: 60%;
+    margin-top: 30px
+}
+
+#wish-visualcue {
+    margin-left: 60px;
+}
+
+.shoppingchart {
+    float: left;
+}
+
+.add-wish {
+    width: 100%;
+    display: flow-root;
 }

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wish List</title>
+    <!-- CSS -->
+    <link href="puimuddypaws.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- javascript -->
+    <script src="shoppingCarService.js"></script>
+    <script src="./wishDataSercice.js"></script>
+    <script src="./wishList.js"></script>
+
+</head>
+
+<body>
+
+    <!-- All content -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="nonmain_header">
+                <div id="logoleft">
+                    <a href="index.html"><img src="img/mplogoleft.png" width="300" alt="" /></a>
+                </div>
+                <div class="loginentry">
+                    <span><a href="login.html">LOG IN</a></span>
+                </div>
+            </div>
+            <br>
+            <nav>
+                <a href="browsingitems.html"><img src="img/backbutton.png" width="28" height="24" style="margin-left:40px" alt="" />
+                </a>
+            </nav>
+        </header>
+
+        <!--shopping cart list-->
+        <div class="car-list-parent">
+            <div style="text-align:center;padding:16px 0px"><b>Wish List</b></div>
+
+            <!-- table version list -->
+            <table class="wishList-table">
+                <thead>
+                    <tr style="text-align: left;">
+                        <th>Picture</th>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Color</th>
+                        <th>Price</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="wish_table">
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <!--actionpanel-->
+        <a href="wishList.html" class="wish">
+            <div id="wishlistbtn">
+                <div id="wish-visualcue">
+                    0
+                </div>
+                <img src="img/wishbutton.png" alt="wishbutton">
+                <div class="wishlist-tips-wrapper" id="wishlist-tips-wrapper"></div>
+
+            </div>
+        </a>
+        <a href="shoppingcart.html" class="shoppingchart">
+            <div id="shoppingcartbtn">
+                <div id="count-visualcue">
+                    0
+                </div>
+                <img src="img/shoppingcarticon.png" width="116" height="116" alt="shoppingcartbutton" />
+                <div class="cart-tips-wrapper" id="cart-tips-wrapper"></div>
+            </div>
+
+        </a>
+	</div>
+</body>
+
+</html>
