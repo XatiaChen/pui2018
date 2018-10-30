@@ -31,11 +31,7 @@ function getProductNumber() {
 	return num;
 }
 
-// clear the cart //where's the button?
-function cleanShoppingCar() {
-	localStorage.removeItem(StorageKey);
-}
-
+// total calculation
 function getTotalPay() {
 	var productList = JSON.parse(localStorage.getItem(StorageKey));
 	var total = 0;
@@ -45,4 +41,3 @@ function getTotalPay() {
 	return total;
 }
 
-	//load cart on the screen
