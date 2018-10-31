@@ -171,7 +171,7 @@ $(document).ready(function () {
 });
 
 
-//pass in to the object Item
+//create new item and push to the cart
 function addItemToCart(id, name, size, color, price, quantity, thumbnail) {
 
   isnew = true;
@@ -191,7 +191,7 @@ function addItemToCart(id, name, size, color, price, quantity, thumbnail) {
     shoppingCart.push(item); //add to local storage of detail page
   }
 
-  // var shoppingCartStorage = localStorage.setItem("shoppingCartStorage", JSON.stringify(shoppingCart)); //save the object at locat storage
+ 
   saveShoppingCart(shoppingCart);
   changeShoppingCartQuantity();
 }
