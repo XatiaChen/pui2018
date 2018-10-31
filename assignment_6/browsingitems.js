@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
     changeShoppingCartQuantity();
+    changeWishListNumber();
 
     renderProductList();
 
@@ -12,7 +13,9 @@ $(document).ready(function () {
 function changeShoppingCartQuantity() {
     $("#count-visualcue").text(getProductNumber());
 }
-
+function changeWishListNumber() {
+    $("#wish-visualcue").text(wishDataSercie.count);
+  }
 
 function renderProductList() {
     var contaner = $("#product_list");
