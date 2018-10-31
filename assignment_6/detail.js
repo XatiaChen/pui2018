@@ -98,7 +98,7 @@ $(document).ready(function () {
 
 
 
-  // marquee
+  // marquee learned from part of the class at https://www.imooc.com/learn/386
   var oDiv = document.getElementById('wish_product');
   var oUl = document.getElementById('marqueeList');
   var speed = -2;//Initial speed
