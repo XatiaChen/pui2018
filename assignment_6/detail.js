@@ -1,5 +1,5 @@
 //javascript document
-//group the color and sizes together
+
 
 var currentCart = {};
 var shoppingCart = [];
