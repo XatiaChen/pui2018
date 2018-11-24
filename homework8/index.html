@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Huangmei Opera</title>
+		<meta name="Resource-type" content="Document" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./lib/jquery.fullpage.min.css"
+		/>
+		<!-- jQuery -->
+		<script src="lib/jquery.js"></script>
+
+		<!-- javascript -->
+
+		<script type="text/javascript" src="./lib/jquery.fullpage.min.js"></script>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Niconne"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="callbacksDiv"></div>
+
+		<div class="container-fluid" id="fullpage">
+			<div class="section" id="section0">
+				<div class="index-bg filter"></div>
+				<div class="index-img1">
+					<!-- <img src="./Assets/image/huangmeipaintingbg.png" /> -->
+				</div>
+				<div class="index-img2">
+					<!-- <img src="./Assets/image/huangmeipaintingbg.png" /> -->
+				</div>
+				<div class="index-img3">
+					<img src="./Assets/image/indexhistoryroutes.png" />
+				</div>
+				<div id="guide" class="guide">
+					<h5>A Guide to</h5>
+					<h1>Huangmei Opera</h1>
+					<p>
+						Introduction to Huangmei Opera's history.Introduction to Huangmei
+						Opera's history. Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus
+						sapien. Nam porttitor vel mauris a cursus. Maecenas suscipit cursus
+						lorem, at auctor quam lobortis vel. Vestibulum ante ipsum primis in
+						faucibus orci
+					</p>
+				</div>
+				<span id="secondPage" class="step next">Dive In</span>
+
+				<!--
+					<div class="" id="left-content">
+						<img src="Assets/image/huangmeipaintingbg.png" width="170%" />
+						<div id="siteintro">
+							<h5>A Guide to</h5>
+							<h1>Huangmei Opera</h1>
+							<p>
+								Introduction to Huangmei Opera's history.Introduction to Huangmei
+								Opera's history. Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Aenean faucibus euismod ante vitae mollis. Nulla
+								vel tellus sapien. Nam porttitor vel mauris a cursus. Maecenas
+								suscipit cursus lorem, at auctor quam lobortis vel. Vestibulum
+								ante ipsum primis in faucibus orci
+							</p>
+						</div>
+					</div>
+				-->
+				<!--
+					<div class="" id="right-content">
+						<img
+							src="Assets/image/indexintropic.png"
+							width="70%"
+							id="indexintropic"
+						/>
+						<img
+							src="Assets/image/indexhistoryroutes.png"
+							width="10%"
+							id="indexroutes"
+						/>
+						<img src="Assets/image/indexmap1.png" width="20%" id="indexmap1" />
+					</div>
+					<a href="#secondPage">
+						<div class="row" id="scroll-control">
+							<span>Dive In</span> <br />
+							<img src="Assets/icon/arrowdown.png" height="23" width="48" />
+						</div>
+					</a>
+				-->
+			</div>
+
+			<div class="section" id="section1">
+				<div class="sec-bg filter"></div>
+				<span id="firstPage" class="step pre"> Back</span>
+				<nav id="nav" class="nav-menu">
+					<ul>
+						<li class="active">Types of singing voices</li>
+						<li>Classic Plays</li>
+						<li>Costumes</li>
+						<li>A Leading Historical Figure</li>
+					</ul>
+				</nav>
+				<div class="content-wrap" id="content">
+					<div class="content">
+						<div id="menu1-content">
+							<p>
+								There are three major There are three major There are three
+								major There are three major
+							</p>
+							<p>
+								There are three major There are three major There are three
+								major
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!--
+					<a href="#firstPage">
+					<div class="row" id="scroll-control">
+						<img src="Assets/icon/arrowup.png" height="23" width="48" /> <br />
+						<span>Back</span>
+					</div></a
+					           >
+				-->
+				<!--
+					<div class="main-nav col-lg-3 col-md-3 col-sm-3">
+						<img src="Assets/icon/navline.png" height="426" width="42" />
+						<ul>
+							<li id="menu-types-of-voices"><a>Types of singing voices</a></li>
+							<li id="menu-classic-plays"><a href="#">Classic Plays</a></li>
+							<li id="menu-costumes">Costumes</li>
+							<li id="menu-leading-figure">A Leading Historical Figure</li>
+						</ul>
+					</div>
+
+					<div class="right-ctnt"></div>
+				-->
+			</div>
+		</div>
+		<script src="majorix.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#fullpage").fullpage({
+					autoScrolling: true,
+				});
+				console.log($.fn);
+
+				$("#secondPage").on("click", function() {
+					$.fn.fullpage.moveSectionDown();
+				});
+
+				$("#firstPage").on("click", function() {
+					$.fn.fullpage.moveSectionUp();
+				});
+				$("#nav li").on("click", function(e) {
+					$("#nav li").removeClass("active");
+					$(this).addClass("active");
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			// var deleteLog = false;
+
+			// //fullpage initialisation
+			// var myFullpage = new fullpage("#fullpage", {
+			// 	// sectionsColor: ['black', 'black', 'black', 'black', 'black'],
+			// 	anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
+			// 	menu: "#menu",
+			// 	onLeave: function(origin, destination, direction) {
+			// 		var params = {
+			// 			origin: origin,
+			// 			destination: destination,
+			// 			direction: direction,
+			// 		};
+
+			// 		//clearing the logging in the screen
+			// 		if (deleteLog) {
+			// 			document.getElementById("callbacksDiv").innerHTML = "";
+			// 		}
+
+			// 		// addToLog('onLeave', params);
+
+			// 		console.log("--- onLeave ---");
+			// 		console.log(params);
+			// 	},
+			// 	onSlideLeave: function(section, origin, destination, direction) {
+			// 		var params = {
+			// 			section: section,
+			// 			origin: origin,
+			// 			destination: destination,
+			// 			direction: direction,
+			// 		};
+
+			// 		//clearing the logging in the screen
+			// 		if (deleteLog) {
+			// 			document.getElementById("callbacksDiv").innerHTML = "";
+			// 		}
+
+			// 		// addToLog('onSlideLeave', params);
+
+			// 		console.log("--- onSlideLeave ---");
+			// 		console.log(params);
+			// 	},
+			// });
+		</script>
+	</body>
+</html>
