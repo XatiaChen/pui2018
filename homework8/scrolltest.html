@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrolltest</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
+    <style>
+        #main-nav {
+            height:10%;
+            background-color: lightgreen;
+            width:200px;
+            float:left;
+        }
+        .sub-content p {
+            font-size: 2em;
+            line-height: 90px;
+        }
+        .sub-content {
+            overflow: scroll;
+            height:250px;
+        }
+        .right-content {
+            overflow: scroll;
+            height: 450px;
+            background-color: lightsteelblue;
+            float:left;
+            width:80%;
+        }
+
+        #sub-content1 {
+            background-color: plum;
+        }
+        #sub-content2 {
+            background-color: antiquewhite;
+        }
+        #sub-content3 {
+            background-color: lightpink;
+        }
+    </style>
+    <script src="assets/libs/ahrelax.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <nav id="main-nav">Classic Play and sub nav</nav>
+        <div class="right-content">
+            <div id="sub-content1" class="sub-content">
+                <h2>1 Play title</h2>
+                <p>blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblah</p>
+            </div>
+            <div id="sub-content2" class="sub-content">
+                <h2>2 Play title</h2>
+                <p>blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblah</p>
+            </div>
+            <div id="sub-content3" class="sub-content">
+                <h2>3 Play title</h2>
+                <p>blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblahblahlblahblah
+                    blahlblahblahblahlblahblahblahlblahblahblahlblahblah</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        ScrollReveal().reveal('#sub-content1');
+        ScrollReveal().reveal('#sub-content2', {
+            distance: '60px',
+            easing: 'ease-in',
+            opacity: 0.1,
+            origin:'bottom',
+            // afterReset: myCallback
+        });
+        ScrollReveal().reveal('#sub-content3', { delay: 1000 });
+        ScrollReveal().clean('#sub-content1');
+
+        // function myCallback (el) {
+        //     el.classList.remove('is-animating');
+        // }
+
+    </script>
+
+
+</body>
+</html>

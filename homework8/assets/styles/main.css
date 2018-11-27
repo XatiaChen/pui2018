@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #111;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+      scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+#index {
+    background: url("../images/indexbg.png") center / cover no-repeat fixed;
+}
+
+#content {
+    background: url("../images/contentbg.png") center / cover no-repeat fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.switch {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch span {
+    color: #eccc8c;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.major {
+    height: 85vh;
+}
+
+#index-main {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(24, 1fr);
+}
+
+#index-box1 {
+    grid-area: 1 / 1 / 7 / 17;
+    background: url("../images/huangmeipaintingbg.png") center / cover no-repeat;
+    opacity: .75;
+    z-index: 1;
+}
+
+#index-box2 {
+    grid-area: 3 / 1 / 6 / 11;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+#index-box3 {
+    grid-area: 2 / 12 / 5 / 23;
+    background: url("../images/indexintropic.png") center / contain no-repeat;
+    z-index: 2;
+}
+
+#index-box4 {
+    grid-area: 4 / 20 / 7 / 24;
+    background: url("../images/indexmap1.png") center / contain no-repeat;
+    z-index: 3;
+}
+
+#index-box5 {
+    grid-area: 5 / 20 / 7 / 23;
+    background: url("../images/indexhistoryroutes.png") top 40% left 60% / contain no-repeat;
+    z-index: 4;
+    opacity: 0;
+}
+
+#index-box5:hover {
+    opacity: 1;
+}
+
+.introduction {
+    margin: 10% 5%;
+}
+
+#title-main {
+    color: #ac802a;
+    font-size: 45px;
+    font-family: "Niconne", cursive;
+}
+
+@media only screen and (max-width: 767px) {
+    #title-main {
+        font-size:30px;
+    }
+
+}
+
+#title-aux {
+    font-weight: 100;
+    color: #fffcf8;
+    font-size: 18px;
+}
+
+#intro {
+    color: #eccc8c;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 14px;
+}
+
+#content-main {
+    display: flex;
+    align-items: stretch;
+}
+
+.nav-bar {
+    width: 30%;
+    height: 100%;
+    align-self: center;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr 3fr 1fr;
+}
+
+.content-box {
+    width: 70%;
+}
+
+#nav-bg {
+    grid-area: 1 / 1 / 5 / 2;
+    background: url("../images/navline.png") center / contain no-repeat;
+}
+
+/*main nav*/
+.nav-sub {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 4fr;
+}
+
+.active-opt {
+    font-size: 25px;
+    color: #eccc8c;
+    font-weight: 200;
+    line-height: 35px;
+    font-family: "Open Sans";
+}
+
+.active-opt::before {
+    content: url("../images/buddraft.png");
+}
+
+.active-opt[data-children]::after {
+    content: url("../images/menupointer.png");
+}
+
+.deactive-opt {
+    line-height: 100px;
+    font-size: 16px;
+    color: #a18e68;
+    font-family: "Open Sans";
+    font-weight: 100;
+}
+
+.active-sub-opt {
+    color: #eccc8c;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.deactive-sub-opt {
+    color: #eccc8c;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 20px;
+    opacity: 0.4;
+}
+
+.opt:hover, .sub-opt:hover {
+    cursor: pointer;
+}
+
+/*===Classic Plays===*/
+.content-box {
+    height: 500px;
+    overflow:scroll;
+}
+.sub-content {
+
+}
+#sub-content1 {
+
+}
+.content-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    height:400px;
+    background-color: saddlebrown;
+}
+
+.content-sec h3, p {
+    color: #eccc8c;
+    font-family: "Open Sans";
+}
+
+.content-sec h3 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.content-sec p {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.content-sec img {
+    float:left;
+    width:25%;
+}
+
+.voice-intro {
+    width: 260px;
+    background: url("../images/musicintro.png") center / contain no-repeat;
+}
+
+.voice-opt{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(240, 219, 178, 0.2);
+    border: 1px solid #eccc8c;
+}
+
+.active-sub, .active-content {
+    display: unset;
+}
+
+.deactive-sub, .deactive-content {
+    display: none;
+}
+
+#dialog {
+    display: none;
+}
+
+/*===Costumes===*/
+/* The actual popup (appears on top) */
+.popup-window {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.popup-window .popup-content {
+    width: 1200px;
+    height: 800px;
+    background-color: rgba(240, 219, 178, 0.2);
+    border: 1px solid #eccc8c;
+    margin: 100px auto 0;
+}
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.menu3-content .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
