@@ -9,8 +9,8 @@ $(document).ready(function() {
             $('#' + id).siblings('.active-opt').removeClass('active-opt').addClass('deactive-opt');
             $('#' + id).removeClass('deactive-opt').addClass('active-opt');
             $('#' + children).removeClass('deactive-sub').addClass('active-sub');
-            //$('#' + children).children().first().removeClass('deactive-sub-opt').addClass('active-sub-opt');
-            //$('#' + $('#' + children).children().first()[0].dataset.content).removeClass('deactive-content').addClass('active-content');
+            $('#' + children).children(':first-child').removeClass('deactive-sub-opt').addClass('active-sub-opt');
+            $('#' + $('#' + children).children(':first-child')[0].dataset.content).removeClass('deactive-content').addClass('active-content');
         } else {
             $('.nav-sub').removeClass('active-sub').addClass('deactive-sub');
             //$('.nav-sub').children('active-sub-opt').removeClass('active-sub-opt').addClass('deactive-sub-opt');
@@ -21,12 +21,6 @@ $(document).ready(function() {
         $('#' + content).removeClass('deactive-content').addClass('active-content');
     });
 
-    // $('.sub-opt').on('click', function(event) {
-    //     var id = event.target.id;
-    //     $('#' + id).siblings('.active-sub-opt').removeClass('active-sub-opt').addClass('deactive-sub-opt');
-    //     $('#' + id).removeClass('deactive-sub-opt').addClass('active-sub-opt');
-    // });
-
     $('.sub-opt').on('click', function(event) {
         var id = event.target.id;
         var content = event.target.dataset.content;
@@ -34,11 +28,58 @@ $(document).ready(function() {
         var idx = $('.nav-bar .nav-sub').children().index(this)
         var currentMarginTop = upperMarginTop - 2 * idx;
         $('.nav-bar .nav-sub').css('margin-top', currentMarginTop + 'rem');
-        $('#' + content).siblings('.active-content').fadeOut().removeClass('active-content').addClass('deactive-content');
-        $('#' + content).fadeIn().removeClass('deactive-content').addClass('active-content');
+        $('#' + content).siblings('.active-content').fadeOut(1000).removeClass('active-content').addClass('deactive-content');
+        $('#' + content).fadeIn(1000).removeClass('deactive-content').addClass('active-content');
         $('#' + id).siblings('.active-sub-opt').removeClass('active-sub-opt').addClass('deactive-sub-opt');
         $('#' + id).removeClass('deactive-sub-opt').addClass('active-sub-opt');
     });
+
+    //var currentActiveElem = null;
+    //var currentSubOptID = null;
+    $('#content2').on('wheel', function(event) {
+        event.preventDefault(); 
+
+        var currentActiveElem = $(this).children('.active-content');
+        var currentSubOpt = $('#' + currentActiveElem[0].dataset.opt);
+        if (event.originalEvent.deltaY >= 0) {
+            var nextElem = currentActiveElem.next().length === 0 ? $(this).children(':first-child') : currentActiveElem.next();
+            var nextSubOpt = currentSubOpt.next().length === 0 ? $('#nav-sub1').children(':first-child') : currentSubOpt.next();
+        } else {
+            var nextElem = currentActiveElem.prev().length === 0 ? $(this).children(':last-child') : currentActiveElem.prev();
+            var nextSubOpt = currentSubOpt.prev().length === 0 ? $('#nav-sub1').children(':last-child') : currentSubOpt.prev();
+        }
+
+        var upperMarginTop = 7;
+        var idx = $(this).children().index(nextElem);
+        console.log(idx)
+        var currentMarginTop = upperMarginTop - 2 * idx;
+        $('.nav-bar .nav-sub').css('margin-top', currentMarginTop + 'rem');
+
+        currentActiveElem.fadeOut(1000).removeClass('active-content').addClass('deactive-content');
+        currentSubOpt.removeClass('active-sub-opt').addClass('deactive-sub-opt');
+        nextElem.fadeIn(1000).removeClass('deactive-content').addClass('active-content');
+        nextSubOpt.removeClass('deactive-sub-opt').addClass('active-sub-opt');
+    });
+
+    $('.back-spot, .next-spot').on('click', function(event) {
+        var t = event.target;
+        var sourceAnchor = t.parentElement.id;
+        var targetAnchor = t.dataset.anchor;
+        var sourceOpt =  $('#' + sourceAnchor)[0].dataset.opt;
+        var targetOpt =  $('#' + targetAnchor)[0].dataset.opt;
+        $('#' + sourceAnchor).fadeOut(1000).removeClass('active-content').addClass('deactive-content');
+        $('#' + targetAnchor).fadeIn(1000).removeClass('deactive-content').addClass('active-content');
+        $('#' + sourceOpt).removeClass('active-sub-opt').addClass('deactive-sub-opt');
+        $('#' + targetOpt).removeClass('deactive-sub-opt').addClass('active-sub-opt');
+    });
+
+    /*$('').on('click', function(event) {
+        var t = event.target;
+        var sourceAnchor = t.parentElement.id;
+        var targetAnchor = t.dataset.anchor;
+        $('#' + sourceAnchor).fadeOut(1000).removeClass('active-content').addClass('deactive-content');
+        $('#' + targetAnchor).fadeIn(1000).removeClass('deactive-content').addClass('active-content');
+    });*/
 
 
     // music play
@@ -46,6 +87,7 @@ $(document).ready(function() {
 
     $("#audio1").on("click",function(){
         music.play("audio1");
+
         //show intro
         $("#zhuqiang-intro").css("visibility", "visible");
         $("#huaqiang-intro").css("visibility", "hidden");
@@ -83,7 +125,7 @@ $(document).ready(function() {
 
     $("#yan-musicsample").on("click",function(){
         music.play("audio4");
-        // $("#yan-musicsample").css("background-image", "url(&quot;../images/yanmusicpause.png&quot;)")
+        //$("#yan-musicsample").css("background-image", "url(&quot;../images/yanmusicpause.png&quot;)")
     })
 
     //

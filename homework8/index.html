@@ -30,6 +30,7 @@
 
         <!-- Main Content -->
 		<main role="main" class="animatedParent" data-sequence="1000">
+			<!-- First Section -->
 			<section id="index" class="page animated bounceInDown" data-id="1">
 				<div class="container">
 					<div id="index-main" class="major">
@@ -53,17 +54,21 @@
 					</div>
 					<a id="page-down" href="#content" class="switch">
 						<span>Dive In</span>
-						<img src="assets/icons/arrowdown.png">
+						<img src="assets/icons/arrowdown.png" alt="arrowdown">
 					</a>
 				</div>
 			</section>
+
+			<!-- Second Section -->
 			<section id="content" class="page animated bounceInUp delay-250" data-id="2" data-appear-top-offset="-50">
 				<div class="container">
 					<a href="#index" class="switch">
-						<img src="assets/icons/arrowup.png">
+						<img src="assets/icons/arrowup.png" alt="arrowup">
 						<span>Back</span>
 					</a>
+					<!-- main content -->
 					<div id="content-main" class="major">
+						<!-- main nav -->
 						<div class="nav-bar">
 							<div id="nav-bg"></div>
 							<div id="nav-opts">
@@ -73,27 +78,28 @@
 								<div id="nav-opt4" class="opt deactive-opt" data-content="content4">An Historical Figure</div>
 							</div>
 							<div id="nav-sub1" class="nav-sub deactive-sub" data-parent="nav-opt2">
-                                <div id="spaceholder-sub"></div>
+                                <!--<div id="spaceholder-sub"></div>-->
 								<a id="sub1-opt1" href="#sub1-content1" class="sub-opt deactive-sub-opt" data-content="sub1-content1">First Play</a>
 								<a id="sub1-opt2" href="#sub1-content2" class="sub-opt deactive-sub-opt" data-content="sub1-content2">Second Play</a>
 								<a id="sub1-opt3" href="#sub1-content3" class="sub-opt deactive-sub-opt" data-content="sub1-content3">Third Play</a>
-								<div id="sub1-cursor"></div>
 							</div>
 							
 						</div>
+						<!-- Content on the right -->
 						<div class="content-box">
+							<!-- singing voices -->
 							<div id="content1" class="active-content">
 								<div class="content-sec">
                                     <h3>Three major singing voices</h3>
-									<p>Huangmei opera is one of the most famous and mainstream opera in China (others include Beijing opera).</p>
+									<p>Huangmei opera is one of the most famous and mainstream operas in China (others include Beijing opera).</p>
 									<p>Click to listen to each of the samples, and get to know them better.</p>
-									<div class="voices content-img">
+									<div id="voices">
 										<div class="voice">
 											<div class="voice-intro" id="zhuqiang-intro">
 												<p>This tone is widely used in this opera. It is steady, relatively serious, and melodious, and majorly for narrative purpose.</p>
 											</div>
 											<div class="voice-opt" id="audio1" >
-												<img id="wave1" src="assets/icons/musicwave.png">
+												<img id="wave1" src="assets/icons/musicwave.png" alt="wave">
 											</div>
 											<p>The main tone</p>
 										</div>
@@ -102,7 +108,7 @@
 												<p>This tone is playful and involves a lot of change in voices. It is usually used by young characters in cheerful moments.</p>
 											</div>
 											<div class="voice-opt" id="audio2">
-												<img id="wave2" src="assets/icons/musicwave.png">
+												<img id="wave2" src="assets/icons/musicwave.png" alt="wave">
 											</div>
 											<p>The flowery tone</p>
 										</div>
@@ -111,78 +117,71 @@
 												<p>This tone sounds more different than the others because it is specifically used for deities and other mythological figures.</p>
 											</div>
 											<div class="voice-opt" id="audio3">
-												<img id="wave3" src="assets/icons/musicwave.png">
+												<img id="wave3" src="assets/icons/musicwave.png" alt="wave">
 											</div>
 											<p>The deity tone</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div id="content2" class="deactive-content animatedParent" data-sequence="1000">
-								<div id="sub1-content1" class="animated bounceInDown delay-250" data-id="1" data-appear-top-offset="-50">
+
+							<!-- plays -->
+							<div id="content2" class="deactive-content">
+								<div id="sub1-content1" class="active-content" data-opt="sub1-opt1">
 									<div class="content-sec">
 										<h3>The Story of a Female Royal Husband</h3>
-										<p>
-											Introduction of the plots together with pictures and possibly videos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus et ultrices posuere cubilia Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus et ultrices posuere cubilia Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus posuere cubilia Curae.
-										</p>
-
-                                        <div class="content-img">
+										<p>Feng suzhen and Li zhaoting fell in love since childhood, after marriage due to family circumstances, stepmother forced divorce. Feng was forced to pretend as a man and entered the capital to take an examination, and won the first place. Th emperor married her to his daughter. However, the night of the truth of the wedding and the princess, the emperor forgive the crime, Feng and li finally got back together.</p>
+										<div class="content-img">
                                             <img src="assets/images/nvfuma1.png" width="45%" height="45%" alt="play image">
                                             <img src="assets/images/nvfuma2.png" width="45%" height="45%"  alt="play image">
                                         </div>
 									</div>
-									
+									<div data-anchor="sub1-content2" class="next-spot">Next Play</div>
 								</div>
-								<div id="sub1-content2" class="animated bounceInDown delay-250" data-id="2" data-appear-top-offset="-50">
-                                    <span class="play-switch">Next Play</span>
+								<div id="sub1-content2" class="deactive-content" data-opt="sub1-opt2">
+									<div data-anchor="sub1-content1" class="back-spot">Last Play</div>
 									<div class="content-sec">
 										<h3>The Legendary Marriage between fairy and man</h3>
-										<p>
-											Introduction of the plots together with pictures and possibly videos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus et ultrices posuere cubilia Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus et ultrices posuere cubilia Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus posuere cubilia Curae.
-										</p>
-                                        <div class="content-img">
+										<p>In the temple of heaven, the jade emperor's youngest daughter, the seven fairies, and her sisters visited lingxutai. Among them, dong yong sold his body to bury his father's move moved the seven fairies, the seven fairies love him honest, begged wayan to help her down to earth. Wayan could not resist the entreaty of the seven fairies and disobeyed the precepts of the heavenly palace. The seven fairies came down to earth with incense and married dong yong.</p>
+										<div class="content-img">
                                             <img src="assets/images/tianxianpei1.png" width="45%" height="45%" alt="play image">
                                             <img src="assets/images/tianxianpei2.png" width="45%" height="45%" alt="play image">
                                         </div>
 									</div>
+									<div data-anchor="sub1-content3" class="next-spot">Next Play</div>
 								</div>
-								<div id="sub1-content3" class="animated bounceInDown delay-250" data-id="3" data-appear-top-offset="-50">
-                                    <span class="play-switch">Next Play</span>
+								<div id="sub1-content3" class="deactive-content" data-opt="sub1-opt3">
+									<div data-anchor="sub1-content2" class="back-spot">Last Play</div>
 									<div class="content-sec">
 										<h3>The Woman of Huizhou</h3>
-										<p>
-											Introduction of the plots together with pictures and possibly videos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus et ultrices posuere cubilia Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus et ultrices posuere cubilia Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus posuere cubilia Curae.
-										</p>
-
-                                        <div class="content-img">
+                                        <p>A hundred years ago, a tragic and beautiful story happened in an isolated village in huizhou, anhui province. The 15-year-old girl sat on the sedan chair with the beautiful expectation of love, but she began the long wait for her husband whom she had never met at her husband's home.</p>
+										<div class="content-img">
                                             <img src="assets/images/huizhounvren1.jpg" width="45%" height="45%" alt="play image">
                                             <img src="assets/images/huizhounvren2.jpg" width="45%" height="45%" alt="play image">
                                         </div>
 									</div>
 								</div>
 							</div>
+
+							<!-- costumes -->
 							<div id="content3" class="deactive-content">
 								<div class="content-sec">
 									<h3>The Two Major Style of Dressing UP</h3>
 									<p>
-                                        Just like other opera forms, the costumes in Huangmei Opera are a crucial part of it as well.
-                                        The system of dressing up for a character is complex, and often relates to the gender, genera, personality, occupation, and social status of the character.
-                                        Here is a set of dress-up that is one of the most basic/classic sets of costumes.<br>
-
-                                        Click to see more details.
-
+										Introduction of the plots together with pictures. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus et ultrices posuere cubilia Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus et ultrices posuere cubilia Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel tellus sapien, primis in faucibus orci luctus posuere cubilia Curae.
 									</p>
 									<div id="costume-detail"><img src="assets/images/clothdisplay.png" alt="costume image"></div>
 								</div>
 								
 							</div>
+
+							<!-- Historical figure -->
 							<div id="content4" class="deactive-content">
 								<div class="content-sec">
 									<h3>Fengying Yan</h3>
 									<p>A great Huangmei Opera artist, who contributed a lot to the development of the opera art,
                                         but suffered from political persecution, and committed suicide at the age of 38.</p>
                                     <div id="yan-musicsample"></div>
-
                                     <div class="content-img">
                                         <img src="assets/images/yan1.png" width="45%" height="45%" alt="portrait of Yan">
                                         <img src="assets/images/yan2.png" width="45%" height="45%" alt="portrait of Yan">
@@ -199,8 +198,6 @@
 		<!-- JQuery and JS -->
         <script src="assets/libs/jquery-3.3.1.min.js"></script>
         <script src="assets/libs/css3-animate-it.js"></script>
-        <script src="assets/libs/velocity.js"></script>
         <script src="assets/scripts/mainix.js"></script>
-
 	</body>
 </html>

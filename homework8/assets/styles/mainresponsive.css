@@ -23,11 +23,13 @@
         height: 100vh;
         overflow-x: hidden;
         overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
         scroll-behavior: smooth;
     }
 
     main::-webkit-scrollbar {
-        display: none;
+        width: 0 !important;
     }
 
     a {
@@ -141,14 +143,15 @@
 
     #content-main {
         display: flex;
+        flex-direction: row;
         align-items: stretch;
-        flex-direction: column;
     }
 
     .content-box {
         width: 70%;
-        overflow: auto;
-        scroll-behavior: smooth;
+        overflow: hidden;
+        /*overflow: auto;
+        scroll-behavior: smooth;*/
     }
 
     /*===Main Nav===*/
@@ -181,8 +184,9 @@
     }
 
     .nav-sub {
-        display: grid;
-        grid-template: repeat(3, 1fr) / 1fr 4fr;
+        display: flex;
+        flex-direction: column;
+        margin-top: 7rem;
     }
 
     .active-opt {
@@ -241,12 +245,23 @@
         line-height: 50px;
     }
 
-    .opt:hover, .sub-opt:hover {
+    .opt:hover, .sub-opt:hover, .back-spot:hover, .next-spot:hover {
         cursor: pointer;
     }
 
-    .active-sub, .active-content {
+    .back-spot, .next-spot {
+        font-size: 14px;
+        font-weight: 100;
+        color: #ECCC8C; 
+        margin-bottom: 10px;
+    }
+
+    .active-content {
         display: unset;
+    }
+
+    .active-sub {
+        display: flex;
     }
 
     .deactive-sub, .deactive-content {
@@ -329,11 +344,19 @@
         width: 100%;
         height: 100%;
         overflow-x: hidden;
-        overflow-y: hidden;
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
     }
 
-    #content2::-webkit-scrollbar {
-        display: none;
+    #content2::-webkit-scrollbar { 
+        width: 0 !important;
+    }
+
+    #sub1-content1, #sub1-content2, #sub1-content3 {
+        width: 100%;
+        height: 100%;
     }
 
     .content-img {
@@ -345,7 +368,6 @@
     .content-sec {
         display: flex;
         flex-direction: column;
-        align-items: left;
         padding-right: 20px;
         padding-left: 10px;
         padding-top: 30px;
@@ -523,6 +545,25 @@
         flex-direction: column;
     }
 
+    #content2 {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+    }
+
+    #content2::-webkit-scrollbar { 
+        width: 0 !important;
+    }
+
+    #sub1-content1, #sub1-content2, #sub1-content3 {
+        width: 100%;
+        height: 100%;
+    }
+
     #nav-bg {
         visibility: visible;
     }
@@ -576,6 +617,25 @@
         flex-direction: row;
     }
 
+    #content2 {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+    }
+
+    #content2::-webkit-scrollbar { 
+        width: 0 !important;
+    }
+
+    #sub1-content1, #sub1-content2, #sub1-content3 {
+        width: 100%;
+        height: 100%;
+    }
+
     #nav-bg {
         visibility: visible;
     }
@@ -608,6 +668,25 @@
         font-family: "Open Sans";
         font-weight: 100;
         font-size: 14px;
+    }
+
+    #content2 {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+    }
+
+    #content2::-webkit-scrollbar { 
+        width: 0 !important;
+    }
+
+    #sub1-content1, #sub1-content2, #sub1-content3 {
+        width: 100%;
+        height: 100%;
     }
 
     #index-box1 {
@@ -648,6 +727,11 @@
         flex-direction: row;
     }
 
+    .content-box {
+        width: 70%;
+        overflow: hidden;
+    }
+
 
     /*===Main Nav===*/
     .nav-bar {
@@ -684,8 +768,9 @@
     }
 
     .nav-sub {
-        display: grid;
-        grid-template: repeat(3, 1fr) / 1fr 4fr;
+        display: flex;
+        flex-direction: column;
+        margin-top: 7rem;
     }
 
     .active-opt {
@@ -743,12 +828,23 @@
         width:auto;
     }
 
-    .opt:hover, .sub-opt:hover {
+    .opt:hover, .sub-opt:hover, .back-spot:hover, .next-spot:hover {
         cursor: pointer;
     }
 
-    .active-sub, .active-content {
+    .back-spot, .next-spot {
+        font-size: 14px;
+        font-weight: 100;
+        color: #ECCC8C; 
+        margin-bottom: 10px;
+    }
+
+    .active-content {
         display: unset;
+    }
+
+    .active-sub {
+        display: flex;
     }
 
     .deactive-sub, .deactive-content {
@@ -761,6 +857,3 @@
 
 
 }
-
-
-

@@ -5,7 +5,6 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     background-color: #111;
     font-family: "Open Sans";
 }
@@ -21,11 +20,13 @@ main {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
     scroll-behavior: smooth;
 }
 
 main::-webkit-scrollbar {
-    display: none;
+    width: 0 !important;
 }
 
 a {
@@ -137,14 +138,14 @@ a {
 
 #content-main {
     display: flex;
-    align-items: stretch;
     flex-direction: row;
+    align-items: stretch;
 }
 
+/*********/
 .content-box {
     width: 70%;
-    overflow: auto;
-    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 /*===Main Nav===*/
@@ -181,8 +182,9 @@ a {
 }
 
 .nav-sub {
-    display: grid;
-    grid-template: repeat(3, 1fr) / 1fr 4fr;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
 }
 
 .active-opt {
@@ -240,12 +242,23 @@ a {
     width:auto;
 }
 
-.opt:hover, .sub-opt:hover {
+.opt:hover, .sub-opt:hover, .back-spot:hover, .next-spot:hover {
     cursor: pointer;
 }
 
-.active-sub, .active-content {
+.back-spot, .next-spot {
+    font-size: 14px;
+    font-weight: 80;
+    color: #ECCC8C; 
+    margin-bottom: 10px;
+}
+
+.active-content {
     display: unset;
+}
+
+.active-sub {
+    display: flex;
 }
 
 .deactive-sub, .deactive-content {
@@ -257,7 +270,7 @@ a {
 }
 
 /*===Types of Voices===*/
-.voices {
+#voices {
     padding-left:110px;
 }
 .voice-intro {
@@ -296,9 +309,11 @@ a {
 #xianqiang-intro {
     visibility: hidden;
 }
+
 .active {
     visibility: visible!important;
 }
+
 #wave1 {
     width:65px;
     padding-top:13px;
@@ -325,11 +340,19 @@ a {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
 }
 
-#content2::-webkit-scrollbar {
-    display: none;
+#content2::-webkit-scrollbar { 
+    width: 0 !important;
+}
+
+#sub1-content1, #sub1-content2, #sub1-content3 {
+    width: 100%;
+    height: 100%;
 }
 
 .content-img {
@@ -390,9 +413,7 @@ a {
     display: none;
     position: fixed;
     left: 15%;
-    top: 5%;
-    width: 65%;
-    height: 500px;
+    right: 5%;
     z-index: 99;
 }
 .popup-window .popup-content {
@@ -469,12 +490,6 @@ a {
         grid-area: 5 / 12 / 7 / 20;
     }
 
-    #content-main {
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-    }
-
     #nav-bg {
         visibility: hidden;
     }
@@ -526,12 +541,6 @@ a {
 
     #index-box5 {
         grid-area: 6 / 13 / 7 / 19;
-    }
-
-    #content-main {
-        display: flex;
-        align-items: stretch;
-        flex-direction: row;
     }
 
     #nav-bg {
