@@ -1,6 +1,6 @@
 /* 15, 436, 767, 1024*/
 @media screen and (min-width: 15px) {
-    /* 768px and plus */
+    /* small */
     body {
         margin: 0;
         border: 0;
@@ -506,6 +506,7 @@
     /*}*/
 }
 
+/* medium */
 @media only screen and (min-width: 436px) {
     #title-aux {
         font-size: 8px;
@@ -579,7 +580,7 @@
 
 }
 
-/* 375px-767px */
+/* medium */
 @media only screen and (min-width: 767px) {
     #title-aux {
         font-size: 11px;
@@ -650,6 +651,7 @@
     }
 }
 
+/* big */
 @media only screen and (min-width: 1024px) {
     #title-main {
         color: #ac802a;

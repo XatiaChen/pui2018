@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f6583ecd-f0bb-457b-a9c6-957c23e4e57f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/mainresponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/mainresponsive.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,11 +56,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="18" />
           <entry key="html" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="CSS" value="18" />
           <entry key="HTML" value="61" />
         </counts>
       </usages-collector>
@@ -68,20 +70,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="171" column="38" lean-forward="true" selection-start-line="171" selection-start-column="38" selection-end-line="171" selection-end-column="38" />
+            <state relative-caret-position="161">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/mainresponsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="69">
+              <caret line="508" column="12" lean-forward="true" selection-start-line="508" selection-start-column="12" selection-end-line="508" selection-end-column="12" />
+              <folding>
+                <element signature="e#24#9774#0" />
+                <element signature="e#9776#11014#0" />
+                <element signature="e#11034#12205#0" />
+                <element signature="e#12207#16329#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,8 +109,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/styles/mainresponsive.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/styles/mainresponsive.css" />
       </list>
     </option>
   </component>
@@ -178,12 +186,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543639010899</updated>
       <workItem from="1543639012048" duration="965000" />
-      <workItem from="1543640266479" duration="48000" />
+      <workItem from="1543640266479" duration="130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1013000" />
+    <option name="totallyTimeSpent" value="1095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="23" width="1163" height="779" extended-state="0" />
@@ -217,15 +225,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="171" column="38" lean-forward="true" selection-start-line="171" selection-start-column="38" selection-end-line="171" selection-end-column="38" />
+        <state relative-caret-position="161">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/mainresponsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="69">
+          <caret line="508" column="12" lean-forward="true" selection-start-line="508" selection-start-column="12" selection-end-line="508" selection-end-column="12" />
+          <folding>
+            <element signature="e#24#9774#0" />
+            <element signature="e#9776#11014#0" />
+            <element signature="e#11034#12205#0" />
+            <element signature="e#12207#16329#0" />
+          </folding>
         </state>
       </provider>
     </entry>
