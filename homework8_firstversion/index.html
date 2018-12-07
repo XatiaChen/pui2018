@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Huangmei Opera</title>
+		<meta name="Resource-type" content="Document" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.15/howler.min.js"></script>
+		<!--
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		-->
+
+		<!-- jQuery and Javascript -->
+		<script src="lib/jquery.js"></script>
+		<script src="https://unpkg.com/scrollreveal@4"></script>
+		<!-- <script src="majorix.js"></script> -->
+		<script>
+			ScrollReveal({ duration: 1000 });
+		</script>
+
+		<!-- font -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Niconne"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- popup -->
+		<div class="popup-window" id="popup-window">
+			<div class="popup-content">
+				<img
+					src="Assets/image/costumedetaildraft.png"
+					height="616"
+					width="876"
+				/>
+			</div>
+		</div>
+		<div id="callbacksDiv"></div>
+
+		<div class="container" id="fullpage">
+			<div class="wrap">
+				<section class="section index" id="section0">
+					<div class="index-bg filter"></div>
+					<div class="index-img1"></div>
+					<div class="index-img2"></div>
+					<div class="index-img3">
+						<img src="./Assets/image/indexhistoryroutes.png" />
+					</div>
+					<div id="guide" class="guide">
+						<h5>A Guide to</h5>
+						<h1>Huangmei Opera</h1>
+						<p>
+							Introduction to Huangmei Opera's history.Introduction to Huangmei
+							Opera's history. Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Aenean faucibus euismod ante vitae mollis. Nulla
+							vel tellus sapien. Nam porttitor vel mauris a cursus. Maecenas
+							suscipit cursus lorem, at auctor quam lobortis vel. Vestibulum
+							ante ipsum primis in faucibus orci
+						</p>
+					</div>
+					<span id="secondPage" class="step next">
+						Dive In <br />
+						<img src="Assets/icon/arrowdown.png" height="24" width="50" />
+					</span>
+				</section>
+
+				<section class="section content" id="section1">
+					<div class="sec-bg filter"></div>
+					<span id="firstPage" class="step pre">
+						<img src="Assets/icon/arrowup.png" height="23" width="48" /><br />
+						Back
+					</span>
+					<nav id="nav" class="nav-menu">
+						<ul>
+							<li class="active" data-anchor="menu1">
+								Types of singing voices
+							</li>
+							<li data-anchor="menu2">
+								Classic Plays
+								<img src="Assets/icon/menupointer.png" height="20" width="15" />
+								<ul id="plays-menu" class="plays-menu">
+									<li class="active" data-play="0">play1</li>
+									<li data-play="1">play2</li>
+									<li data-play="2">play3</li>
+								</ul>
+							</li>
+							<li data-anchor="menu3">Costumes</li>
+							<li data-anchor="menu4" id="menutest">
+								A Leading Historical Figure
+							</li>
+						</ul>
+					</nav>
+					<div class="content-wrap" id="content-wrap">
+						<div class="main-content" id="main-content">
+							<div class="menu-content show" id="menu1-content">
+								<p>There are three major voices in Huangmei Opera.</p>
+								<p>
+									Click to listen to each of them and see the introduction.
+									<br />
+									You can sing along if you'd like to. Enjoy!
+								</p>
+								<div id="music" class="music-box">
+									<div id="music1" class="music-item">
+										<div class="music-intro"></div>
+										<span>The main tone</span>
+										<div class="music-play"></div>
+									</div>
+									<div id="music2" class="music-item">
+										<div class="music-intro"></div>
+										<span>The flowery tone</span>
+										<div class="music-play"></div>
+									</div>
+									<div id="music3" class="music-item">
+										<div class="music-intro"></div>
+										<span>The deity tone</span>
+										<div class="music-play"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="menu-content menu2-content" id="menu2-content">
+								<span>Last play</span>
+								<div id="play-list" class="play-list">
+									<div id="play1" class="play1 plays">
+										<h2>The Story of a Female Royal Husband</h2>
+										<p>
+											Introduction of the plots together with pictures and
+											possibly videos. Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Aenean faucibus euismod ante vitae
+											mollis. Nulla vel tellus sapien, primis in faucibus orci
+											luctus et ultrices posuere cubilia Curae. Aenean faucibus
+											euismod ante vitae mollis. Nulla vel tellus sapien, primis
+											in faucibus orci luctus et ultrices posuere cubilia Curae.
+											Aenean faucibus euismod ante vitae mollis. Nulla vel
+											tellus sapien, primis in faucibus orci luctus posuere
+											cubilia Curae.
+										</p>
+
+										<img src="Assets/image/nvfuma1.png" height="170" />
+										<img src="Assets/image/nvfuma2.png" height="170" />
+										<img src="Assets/image/nvfuma3.png" height="170" />
+									</div>
+									<div id="play2" class="play2 plays">
+										<h2>The Legendary Marriage between fairy and man</h2>
+										<p>
+											Introduction of the plots together with pictures and
+											possibly videos. Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Aenean faucibus euismod ante vitae
+											mollis. Nulla vel tellus sapien, primis in faucibus orci
+											luctus et ultrices posuere cubilia Curae. Aenean faucibus
+											euismod ante vitae mollis. Nulla vel tellus sapien, primis
+											in faucibus orci luctus et ultrices posuere cubilia Curae.
+											Aenean faucibus euismod ante vitae mollis. Nulla vel
+											tellus sapien, primis in faucibus orci luctus posuere
+											cubilia Curae.
+										</p>
+
+										<img src="Assets/image/tianxianpei1.png" height="170" />
+										<img src="Assets/image/tianxianpei2.png" height="170" />
+									</div>
+									<div id="play3" class="play3 plays">
+										<h2>The Woman of Huizhou</h2>
+										<p>
+											Introduction of the plots together with pictures and
+											possibly videos. Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Aenean faucibus euismod ante vitae
+											mollis. Nulla vel tellus sapien, primis in faucibus orci
+											luctus et ultrices posuere cubilia Curae. Aenean faucibus
+											euismod ante vitae mollis. Nulla vel tellus sapien, primis
+											in faucibus orci luctus et ultrices posuere cubilia Curae.
+											Aenean faucibus euismod ante vitae mollis. Nulla vel
+											tellus sapien, primis in faucibus orci luctus posuere
+											cubilia Curae.
+										</p>
+
+										<img src="Assets/image/huizhounvren1.jpg" height="170" />
+										<img src="Assets/image/huizhounvren2.jpg" height="170" />
+									</div>
+								</div>
+								<span>Next Play</span>
+							</div>
+							<div class="menu-content menu3-content" id="menu3-content">
+								<h2>The Two Major Style of Dressing UP</h2>
+								<p>
+									Introduction of the plots together with pictures. Lorem ipsum
+									dolor sit amet, consectetur adipiscing elit. Aenean faucibus
+									euismod ante vitae mollis. Nulla vel tellus sapien, primis in
+									faucibus orci luctus et ultrices posuere cubilia Curae. Aenean
+									faucibus euismod ante vitae mollis. Nulla vel tellus sapien,
+									primis in faucibus orci luctus et ultrices posuere cubilia
+									Curae. Aenean faucibus euismod ante vitae mollis. Nulla vel
+									tellus sapien, primis in faucibus orci luctus posuere cubilia
+									Curae.
+								</p>
+
+								<div id="costume-detail" class="costume-detail">
+									<img src="Assets/image/costumedetaildraft.png" />
+								</div>
+							</div>
+							<div class="menu-content menu4-content" id="menu4-content">
+								<h2>Fengying Yan</h2>
+								<p>
+									A great Huangmei Opera artist, who contributed a lot to the
+									development of the opera art, but suffered from political
+									persecution, and committed suicide at the age of 38.
+								</p>
+								<img src="Assets/image/yan1.png" width="220" />
+								<img src="Assets/image/yan2.png" width="220" />
+								<div id="yan-sample-music"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script>
+			var ti = 0;
+			var ScrollInstance = ScrollReveal();
+			var musicController = musicControl();
+			window.addEventListener("wheel", function(e) {
+				clearTimeout(ti);
+				ti = setTimeout(function() {
+					//show first section
+					if (e.deltaY < 0) {
+						if (parseInt($("#section1").css("top")) !== 0) {
+							$("#section0").css("top", "-100vh");
+							$("#section1").css("top", 0);
+							scrollElement();
+						}
+						//show first section
+					} else {
+						//when show the section, stop the music
+						musicController.stopMusic();
+						if ($("#section0").css("top") !== 0) {
+							$("#section1").css("top", "100vh");
+							$("#section0").css("top", 0);
+							ScrollInstance.destroy();
+						}
+					}
+				}, 100);
+			});
+
+			$("#secondPage").on("click", function(e) {
+				$("#section0").css("top", "-100vh");
+				$("#section1").css("top", 0);
+				scrollElement();
+			});
+			$("#firstPage").on("click", function(e) {
+				musicController.stopMusic();
+				$("#section1").css("top", "100vh");
+				$("#section0").css("top", 0);
+				//when go back to the first section, stop the music
+				ScrollInstance.destroy();
+			});
+
+			$("#nav>ul>li").on("click", function(e) {
+				//stop the music when click any of the menu lists
+				musicController.stopMusic();
+				$(this)
+					.siblings()
+					.removeClass("active");
+				$(this).addClass("active");
+				var menuName = this.dataset.anchor;
+				if (menuName === "menu2") {
+					$("#plays-menu").show();
+					$(".play1").show();
+				} else {
+					$("#plays-menu").hide();
+				}
+
+				$(".menu-content").removeClass("show");
+				$(`#${menuName}-content`).addClass("show");
+			});
+
+			var currentPlay = 0,
+				timer = 0;
+			$("#plays-menu").on("click", function(e) {
+				e.stopPropagation();
+				var playName = e.target.dataset.play;
+				console.log(playName);
+
+				if (!playName) return;
+				$(this)
+					.find("li")
+					.removeClass("active");
+				$(e.target).addClass("active");
+				transformPlayList(Number(playName));
+			});
+
+			$("#menu2-content").on("wheel", function(e) {
+				e.stopPropagation();
+				var deltaY = e.originalEvent.deltaY;
+				clearTimeout(timer);
+				timer = setTimeout(function() {
+					if (deltaY < 0) {
+						if (currentPlay < 2) {
+							currentPlay += 1;
+						}
+					} else {
+						if (currentPlay > 0) {
+							currentPlay -= 1;
+						}
+					}
+					transformPlayList(currentPlay);
+				}, 200);
+			});
+
+			$("#costume-detail").on("click", function() {
+				$("#popup-window")
+					.css("display", "block")
+					.find(".popup-content")
+					.addClass("animated flipInY");
+			});
+			$("#popup-window").on("click", function() {
+				$(this)
+					.css("display", "none")
+					.find(".popup-content")
+					.removeClass("animated flipInY");
+			});
+
+			function transformPlayList(currentPlay) {
+				$("#play-list").css("transform", `translateY(-${currentPlay * 100}vh)`);
+				$("#plays-menu").css("top", `${40 - currentPlay * 28}px`);
+				$("#plays-menu")
+					.find("li")
+					.removeClass("active")
+					.eq(currentPlay)
+					.addClass("active");
+			}
+
+			function scrollElement() {
+				ScrollInstance.reveal("#nav", {
+					origin: "top",
+					distance: "200px",
+					opacity: 1,
+				});
+				ScrollInstance.reveal("#main-content", {
+					origin: "top",
+					distance: "600px",
+					duration: 300,
+					opacity: 1,
+				});
+			}
+			//music control
+
+			function musicControl() {
+				//HTML5 music library https://github.com/goldfire/howler.js
+
+				var sound1 = new Howl({
+					src: ["./Assets/music/operaclip_huaqiang.mp3"],
+				});
+				var sound2 = new Howl({
+					src: ["./Assets/music/operaclip_xianqiang.mp3"],
+				});
+				var sound3 = new Howl({
+					src: ["./Assets/music/operaclip_zhuqiang.mp3"],
+				});
+				var sound4 = new Howl({
+					src: ["./Assets/music/operaclip_zhuqiang.mp3"], //the music needs to be updated
+				});
+
+				$("#music1").on("click", function() {
+					//If the music is already playing, then no action
+					if (!sound1.playing()) {
+						sound1.play();
+						sound2.stop();
+						sound3.stop();
+						musicEleAnima(this);
+					}
+				});
+				$("#music2").on("click", function() {
+					if (!sound2.playing()) {
+						sound1.stop();
+						sound2.play();
+						sound3.stop();
+						musicEleAnima(this);
+					}
+				});
+				$("#music3").on("click", function() {
+					if (!sound3.playing()) {
+						sound1.stop();
+						sound2.stop();
+						sound3.play();
+						musicEleAnima(this);
+					}
+				});
+				$("#yan-sample-music").on("click", function() {
+					if (!sound4.playing()) {
+						sound4.play();
+					}
+				});
+				//the dialogue bubble and wave animation
+				function musicEleAnima(obj) {
+					$(".music-intro").hide("fast");
+					$(".music-play").hide("fast");
+					$(obj)
+						.find(".music-intro")
+						.css("display", "block")
+						.addClass("animated slideInUp");
+					$(obj)
+						.find(".music-play")
+						.css("display", "block")
+						.addClass("animated slideInUp");
+				}
+				return {
+					stopMusic: function() {
+						sound1.stop();
+						sound2.stop();
+						sound3.stop();
+						$(".music-intro").css("display", "none");
+						$(".music-play").css("display", "none");
+					},
+				};
+			}
+		</script>
+	</body>
+</html>
